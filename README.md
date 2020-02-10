@@ -3,4 +3,5 @@
 ## Members
 - Bijaya ([@bijayagautam](http://github.com/bijayagautam))
 - Joseph ([@sephlao](http://github.com/sephlao))
+- Bijay ([@bijaybdrkarki](https://github.com/bijaybdrkarki))
 
