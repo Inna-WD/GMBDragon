@@ -5,5 +5,5 @@ const App = Spaf();
 
 window.onload = () => {
   App.setParentElement(document.getElementById("app"));
-  App.render(Router(App));
+  App.render(Router(App).default);
 };

@@ -11,8 +11,7 @@ const goToPage = (app, component) => {
   //   updateURL();
 };
 
-export default (appInstance, routes) => {
-  const routeObj = getRoutesObject(routes);
+const init = (app, routeHash) => {
   // listen for route click
   document.querySelectorAll(`[data-route]`).forEach(route => {
     route.addEventListener("click", e => {
@@ -22,10 +21,23 @@ export default (appInstance, routes) => {
           dataset: { route }
         }
       } = e;
-      goToPage(appInstance, routeObj[route]);
+      goToPage(app, routeHash[route]);
     });
   });
-  return routeObj[window.location.pathname]
-    ? routeObj[window.location.pathname]
-    : routeObj["/404"];
+};
+
+export default (appInstance, routes) => {
+  const app = appInstance;
+  const routeHash = getRoutesObject(routes);
+
+  init(app, routeHash);
+
+  return {
+    default: routeHash[window.location.pathname]
+      ? routeHash[window.location.pathname]
+      : routeHash["/404"],
+    init,
+    getRoutesObject,
+    goToPage
+  };
 };

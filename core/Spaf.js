@@ -4,7 +4,7 @@
  * TODO more documentation
  */
 
-const Spaf = () => {
+export default () => {
   let PARENT_ELEMENT = null;
   const setParentElement = element => {
     PARENT_ELEMENT = element;
@@ -33,5 +33,3 @@ const Spaf = () => {
     render
   };
 };
-
-export default Spaf;
