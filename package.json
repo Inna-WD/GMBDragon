@@ -1,0 +1,23 @@
+{
+  "name": "wddm-122-alpha.github.io",
+  "version": "0.0.1",
+  "description": "SPA Framework with Vanilla JS (Assignment)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wddm-122-alpha/wddm-122-alpha.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wddm-122-alpha/wddm-122-alpha.github.io/issues"
+  },
+  "homepage": "https://github.com/wddm-122-alpha/wddm-122-alpha.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
