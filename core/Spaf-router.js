@@ -6,7 +6,7 @@ const getRoutesObject = routes =>
   );
 
 const goToPage = (app, component) => {
-  app.flush();
+  app.flush(app.getParentElement());
   app.render(component);
   //   updateURL();
 };

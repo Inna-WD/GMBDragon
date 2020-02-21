@@ -4,32 +4,36 @@
  * TODO more documentation
  */
 
-export default () => {
+const init = () => {
   let PARENT_ELEMENT = null;
   const setParentElement = element => {
     PARENT_ELEMENT = element;
   };
   const getParentElement = () => PARENT_ELEMENT;
-
-  const flush = () => {
-    const parentElement = getParentElement();
-    parentElement.childNodes.forEach(elm => {
-      elm.remove();
-    });
-  };
-
-  const render = (component, position = "afterbegin") => {
-    const element = component();
-    const parentElement = getParentElement();
-    if (typeof element == "string")
-      parentElement.insertAdjacentHTML(position, element);
-    else parentElement.insertAdjacentElement(position, element);
-  };
-
   return {
     setParentElement,
-    getParentElement,
-    flush,
-    render
+    getParentElement
   };
 };
+
+const flush = element => {
+  element.childNodes.forEach(elm => {
+    elm.remove();
+  });
+};
+
+const SPAF = () => {
+  return {
+    ...init(),
+    flush,
+    render(component, position = "afterbegin") {
+      const element = component();
+      const parentElement = this.getParentElement();
+      if (!(element instanceof Element))
+        parentElement.insertAdjacentHTML(position, element);
+      else parentElement.insertAdjacentElement(position, element);
+    }
+  };
+};
+
+export default SPAF;
