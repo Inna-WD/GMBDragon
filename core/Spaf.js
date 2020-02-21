@@ -4,28 +4,34 @@
  * TODO more documentation
  */
 
-export default class SPAF {
-  PARENT_ELEMENT = null;
-  constructor() {}
+const Spaf = () => {
+  let PARENT_ELEMENT = null;
+  const setParentElement = element => {
+    PARENT_ELEMENT = element;
+  };
+  const getParentElement = () => PARENT_ELEMENT;
 
-  set parentElement(element) {
-    this.PARENT_ELEMENT = element;
-  }
-
-  get parentElement() {
-    return this.PARENT_ELEMENT;
-  }
-
-  flush() {
-    this.parentElement.childNodes.forEach(elm => {
+  const flush = () => {
+    const parentElement = getParentElement();
+    parentElement.childNodes.forEach(elm => {
       elm.remove();
     });
-  }
+  };
 
-  render(component, position = "afterbegin") {
+  const render = (component, position = "afterbegin") => {
     const element = component();
+    const parentElement = getParentElement();
     if (typeof element == "string")
-      this.parentElement.insertAdjacentHTML(position, element);
-    else this.parentElement.insertAdjacentElement(position, element);
-  }
-}
+      parentElement.insertAdjacentHTML(position, element);
+    else parentElement.insertAdjacentElement(position, element);
+  };
+
+  return {
+    setParentElement,
+    getParentElement,
+    flush,
+    render
+  };
+};
+
+export default Spaf;
