@@ -1,4 +1,4 @@
-import Spaf from "./core/Spaf.js";
+import Spaf from "../core/Spaf.js";
 import Router from "./routes/router.js";
 
 const App = new Spaf();

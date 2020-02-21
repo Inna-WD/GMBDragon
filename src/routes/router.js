@@ -1,4 +1,4 @@
-import Router from "../core/Spaf-router.js";
+import Router from "../../core/Spaf-router.js";
 import Home from "../components/home.js"; // home component
 import Programs from "../components/programs.js"; // programs component
 import Students from "../components/students.js"; // students component
