@@ -1,4 +1,10 @@
-export default () => {
+import { html } from "../../core/Spaf.js";
+
+const ProgramsPage = () => {
   console.log("Programs page");
-  return `<h1>Programs page!!</h1>`;
+  return html`
+    <h1>Programs page!!</h1>
+  `;
 };
+
+export default ProgramsPage;
