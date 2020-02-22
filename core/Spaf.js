@@ -4,36 +4,63 @@
  * TODO more documentation
  */
 
-const init = () => {
-  let PARENT_ELEMENT = null;
-  const setParentElement = element => {
-    PARENT_ELEMENT = element;
-  };
-  const getParentElement = () => PARENT_ELEMENT;
+/**
+ * function creates new instance of spa and sets root element as parent
+ */
+export default function() {
+  this.ROOT_ELEMENT = null;
   return {
-    setParentElement,
-    getParentElement
+    setRootElement: element => (this.ROOT_ELEMENT = element),
+    getRootElement: () => this.ROOT_ELEMENT
   };
-};
+}
 
-const flush = element => {
+/**
+ * function removes all child nodes/elements
+ * @param {Element} element
+ */
+export const flush = element => {
   element.childNodes.forEach(elm => {
     elm.remove();
   });
 };
 
-const SPAF = () => {
-  return {
-    ...init(),
-    flush,
-    render(component, position = "afterbegin") {
-      const element = component();
-      const parentElement = this.getParentElement();
-      if (!(element instanceof Element))
-        parentElement.insertAdjacentHTML(position, element);
-      else parentElement.insertAdjacentElement(position, element);
-    }
-  };
+/**
+ * Function creates new element
+ * @param {String} type
+ * @param {Object} attribs
+ * @param {Element} children
+ */
+export const createElement = (type, attribs, children) => {
+  const $dom = document.createElement(type);
+  Object.entries({ ...attribs }).forEach(([key, value]) => {
+    if (key != "children") $dom.setAttribute(key, value);
+  });
+  if (children) $dom.innerHTML += children;
+  return $dom;
 };
 
-export default SPAF;
+/**
+ * function converts string to html element
+ * @param {String} markup
+ */
+export const html = (markup, ...components) => {
+  const $dom = document.createRange().createContextualFragment(markup)
+    .firstElementChild;
+  components.forEach(comp => {
+    $dom.append(comp);
+  });
+  return $dom;
+};
+
+/**
+ * function appends element to parent element according to positon
+ * @param {Element } element
+ * @param {Element} parentElement
+ * @param {String?} position
+ */
+export const render = (element, parentElement, position = "beforeend") => {
+  if (!(element instanceof Element)) return;
+  parentElement.insertAdjacentElement(position, element);
+  return parentElement;
+};
