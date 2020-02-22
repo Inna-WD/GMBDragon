@@ -1,17 +1,19 @@
+import { render, flush } from "./Spaf.js";
+
 // set and update DOM to new page component
-const getRoutesObject = routes =>
+export const getRoutesObject = routes =>
   routes.reduce(
     (acc, { route, component }) => ({ ...acc, [route]: component }),
     {}
   );
 
-const goToPage = (app, component) => {
-  app.flush(app.getParentElement());
-  app.render(component);
-  //   updateURL();
+export const goToPage = (root, component) => {
+  const html = component();
+  flush(root());
+  render(html, root());
 };
 
-const init = (app, routeHash) => {
+export const init = (rootElm, routeHash) => {
   // listen for route click
   document.querySelectorAll(`[data-route]`).forEach(route => {
     route.addEventListener("click", e => {
@@ -21,23 +23,22 @@ const init = (app, routeHash) => {
           dataset: { route }
         }
       } = e;
-      goToPage(app, routeHash[route]);
+      goToPage(rootElm, routeHash[route]);
+      window.history.pushState({ path: route }, "", route);
     });
+  });
+
+  //listen to navigation history event
+  window.addEventListener("popstate", e => {
+    goToPage(rootElm, routeHash[window.location.pathname]);
   });
 };
 
-export default (appInstance, routes) => {
-  const app = appInstance;
+export default (rootElem, routes) => {
   const routeHash = getRoutesObject(routes);
+  init(rootElem, routeHash);
 
-  init(app, routeHash);
-
-  return {
-    default: routeHash[window.location.pathname]
-      ? routeHash[window.location.pathname]
-      : routeHash["/404"],
-    init,
-    getRoutesObject,
-    goToPage
-  };
+  return routeHash[window.location.pathname]
+    ? routeHash[window.location.pathname]
+    : routeHash["/404"];
 };
