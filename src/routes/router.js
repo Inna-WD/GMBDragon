@@ -11,4 +11,4 @@ const routes = [
   { route: "/404", component: NotFound404 }
 ];
 
-export default app => Router(app, routes);
+export default rootElement => Router(rootElement, routes)();
