@@ -8,6 +8,8 @@
     --primaryThemeColor: #00275E;
     --primaryThemeColor-light:#DEB406;
     --primaryThemeColor-neutral:#747171;
+
+    --defaultColor: rgb(0, 0, 0);
 }
 
 /* General CSS */
@@ -20,12 +22,137 @@ body{
 
 
 /* CSS for main content */
+/* css for student personal page */
+.personal-basic img{
+    border-radius: 50%;
+    max-width: 60%;
+    margin-left: 4em;
+    padding: 1em 0;
+}
+
+.full-name{
+    color: var(--primaryThemeColor);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+}
+
+.professional-position{
+    color: var(--primaryThemeColor-neutral);
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.personal-contact{
+    display: grid;
+    grid-template-columns: 3em 1em auto;
+}
+
+.personal-contact i{
+    text-align: center;
+}
+
+.vertical-line { 
+    border-left: 1px solid var(--primaryThemeColor-light);
+    height: 1.2em; 
+}
+
+.horizontal-line{
+    height: 1px;
+    color: var(--primaryThemeColor-light);
+    background-color:var(--primaryThemeColor-light);
+    border: none;
+}
+
+.paragraph-title{
+    color: var(--primaryThemeColor-neutral);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 1rem; 
+    margin-bottom: 0.5rem;
+}
+
+.group-title{
+    color: var(--primaryThemeColor);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.paragraph-content{
+    line-height: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-link a{
+    color: var(--defaultColor);
+    text-decoration: none;
+}
+
+.portfolio-link a:hover{
+    color: var(--primaryThemeColor-neutral);  
+}
+.personal-social-media{
+    display: grid;
+    grid-template-columns: 2em 2em 2em 2em 2em;
+    padding: 0.5em;
+    font-size: 2em;
+}
+
+.personal-social-media a{
+    color: var(--defaultColor);
+    text-decoration: none;
+}
+
+.personal-social-media a:hover 
+{
+    color: var(--primaryThemeColor-light);  
+}
+
+.job-position{
+    color: var(--primaryThemeColor-neutral);
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 1em;
+    margin-top: 1rem; 
+}
+
+.company-name{
+    color: var(--primaryThemeColor-neutral);
+    font-weight: bolder;
+    font-size: 1em;
+    margin-top: 0.3rem; 
+    margin-bottom: 0.5rem;
+}
+
+.title-icon{
+    display: grid;
+    grid-template-columns: 2em auto;
+}
 
 
 /* CSS for footer */
 
 
 /* Media Query Breakpoint */
-@media screen and (min-width: 40em) {
-        
+/* breakpoint for student personal page */
+@media screen and (min-width: 60em) {
+    .student-profile{
+        display: grid;
+        grid-template-columns: 24em  29em;
+        grid-template-areas:  "intro indepth";
+        margin-left: 20em;
+    }
+
+    .student-intro{
+        grid-area: intro;
+    }
+    
+    .student-indepth-detail{
+        grid-area: indepth;
+        padding-left: 5em;
+    }
 }
