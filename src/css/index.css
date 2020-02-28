@@ -139,6 +139,7 @@ body {
 }
 .test h2 {
   display: inline;
+  color: #B7B7B7;
 }
 .footer > p {
   padding-bottom: 1em;
