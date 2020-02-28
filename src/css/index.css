@@ -5,6 +5,7 @@
 :root {
   --mainFont: "Source Sans Pro", "Open Sans", "Helvetica Neue", sans-serif;
   /*  */
+
   --primaryThemeColor: #014B77;
   --primaryThemeColor-light: #deb406;
   --primaryThemeColor-neutral: #747171;
@@ -21,6 +22,7 @@ body {
   background-color: var(--primaryThemeColor);
   width: 100%;
   padding: 0.2em 0;
+
   /* position: fixed;
     top: 0; 
     left: 0; */
@@ -105,6 +107,7 @@ body {
     border-bottom: 1px solid #ffffff;
   }
 
+
 /* CSS for header ends */
 
 /* CSS for main content */
@@ -166,6 +169,7 @@ body {
   display: inline-block;
   padding: 0;
 }
+
 .icon i {
   padding: 1rem 1rem;
   background: #6f727f;
@@ -315,6 +319,7 @@ body {
   }
   .searchVisible{
     opacity: 1;
+
   }
   .foot-align {
     display: grid;
