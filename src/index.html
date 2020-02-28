@@ -7,23 +7,105 @@
     <title></title>
     <meta name="description" content="">
     <meta name="author" content="Bijaya Gautam, Joseph Lao, Bijay Karki, Inna Manova">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+    <script src="https://kit.fontawesome.com/faef7e2fff.js"></script>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/index.css?v=1.0">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#" data-route="/">Home</a></li>
+    <header class="header">
+        <div class="navbar">
+            <a href="/" class="logoPlace" id="logoPlace"><img src="/img/logo.png" class="logo" alt="department Logo"></a>
+            <div class="drop-menu">
+                <button type="button">
+                    <span class="material-icons" id="menu">menu</span>
+                </button>
+            </div>
+            <form class="searchbar" id="search"> 
+                <label class="notVisible">Search</label>
+                <input type="search" name="find" id="find" class="search notVisible">
+                <button type="button"><span class="material-icons srchicon" id="srchicon">search</span></button>
+            </form>  
+            <nav class="mainmenu" id="mainmenu" aria-label="Primary">
+                <ul>
+                    <li><a href="#" data-route="/">Home</a></li>
                 <li><a href="#" data-route="/programs">Programs</a></li>
                 <li><a href="#" data-route="/students">Students</a></li>
+                </ul>
+            </nav>
+            <ul class="account" id="account">
+                <li><a href="/signup-or-login"><button><span class="material-icons">account_box</span></button></a></li>
+                <li><button><span class="material-icons">language</span></button></li>
             </ul>
-        </nav>
+        </div> 
     </header>
     <div id="app"></div>
-    <footer>this is the footer section</footer>
+    
+    <footer class="footer">
+        <div class="test">
+            <a href="http://humber.ca" target="_blank"><img src="/img/footer-logo.jpg" alt="" srcset=""></a>
+            <h2>Humber Media Pros</h2>
+        </div>    
+        <div class="foot-align">
+            <div>
+              <a href="#">Programs</a>
+              <a href="#">Admissions</a>
+              <a href="#">Student Life</a>
+              <a href="#">Global</a>
+              <a href="#">About Humber</a>
+            </div>
+            <div>
+              <a href="#">Future Students</a>
+              <a href="#">Current Students</a>
+              <a href="#">International Students</a>
+              <a href="#">Alumini & Donors</a>
+              <a href="#">Employers & Partners</a>
+              <a href="#">Guidance Counsellors</a>
+              <a href="#">Community Resources</a>
+              <a href="#">Faculty & Staffs</a>
+            </div>
+            <div>
+                <a href="#">My Humber</a>
+                <a href="#">Calender</a>
+                <a href="#">Book a Tour
+                    <i class="material-icons small">
+                    info
+                    </i>
+                </a>
+                <a href="#">News & Events</a>
+                <a href="#">Directory</a>
+            </div>
+            <div>
+                <a href="#">1.416.675.3111 
+                    <i class="material-icons small">
+                    contact_support call
+                    </i>
+                </a>
+                <a href="#">enquiry@Humber.ca</a>
+                <a href="#">Careers at Humber</a>
+            </div>
+            <div class="icon">
+                <a href="#"><i class="fab fa-facebook-square f"></i></a>
+                <a href="#"><i class="fab fa-instagram i"></i></a>
+                <a href="#"><i class="fab fa-twitter t"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in in"></i></a>
+                <a href="#"><i class="fab fa-youtube y"></i></a>
+            </div>
+        </div>
+        <p class="orBetween"></p>
+        <div class="footer-grid">
+            <p class="copyright">&copy;2010-2019 Developed by WDDM</p>
+            <div class="footer-bottom"> 
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Code of Student Conduct</a>
+                <a href="#">Request Alternate Format</a>
+            </div>
+        </div>
+    </footer>
     <script src="/app.js" type="module"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

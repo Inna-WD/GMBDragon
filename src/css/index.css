@@ -4,7 +4,7 @@
 /* Variables */
 :root {
     --mainFont: Source Sans Pro;
-
+/*  */
     --primaryThemeColor: #00275E;
     --primaryThemeColor-light:#DEB406;
     --primaryThemeColor-neutral:#747171;
@@ -13,19 +13,313 @@
 /* General CSS */
 body{
     font-family: var(--mainFont);
-    padding: 1em;
+    /* padding: 1em; */
 }
 
 /* CSS for header */
+.header {
+    background-color: var(--primaryThemeColor);
+    width: 100%;
+    padding: 0.4em 0;
+    /* position: fixed;
+    top: 0; 
+    left: 0; */
+}
+.navbar {
+    /* padding: 0.5em 0.5em; */
+    display: grid;
+    grid-template-columns: 2em  auto  4em;
+    grid-template-areas:  "drop logo acon"
+                            "srch srch srch"
+                            "men men men";
+}
+.drop-menu{
+    grid-area: drop;
+    padding: 0.5em 0 0 0.5em;
+}
+.drop-menu > button{
+    border:none;
+    color: red;
+    background-color: var(--primaryThemeColor);
+}
+.logoPlace{
+    grid-area: logo;
+    text-align: center;
+}
+.logo{
+    height: auto;
+    max-height: 40px;
+}
+.account{
+    grid-area: acon;
+    vertical-align: middle;
+}
+.account button{
+    font-size: 2.2em;
+    color: red;
+    background-color: var(--primaryThemeColor);
+    border:none
+}
+.account li{
+    display: inline;    
+}
+.searchbar{
+    grid-area: srch;
+    padding-top: 0.5em;
+    display: none;
+    color: white;    
+}
+.searchbar label{
+    margin-left: 1em;
+}
+.searchbar button{
+    border: none;
+    background-color: var(--primaryThemeColor);
+    color: white;
+}
 
+.search{
+    /* background-color:#dddddd; */
+    border: black 0.05em solid;
+    border-radius: 0.5em;
+    color: #aaaaaa;
+    padding: 0.2em;
+    /* font-size: 0.9em; */
+}
+.mainmenu
+{
+    grid-area: men;
+    display: none;
+    text-align: left;
+    padding-left: 1em;
+}
+    .mainmenu a{
+      display: block;
+      color: white;
+      text-decoration: none;
+      line-height: 2.5;
+    }
+    .mainmenu a:hover {
+      color: #000000;
+      background-color: #aaaaaa;
+    }
+/* CSS for header ends */
 
 /* CSS for main content */
 
 
-/* CSS for footer */
+/* css for footer starts here */
+.footer{
+    background-color: #2C333A;
+    color: white;
+    text-align: center;
+}
+.test{    
+    padding-top: 1em;
+    margin-left: 1em;
+   
+}
+.test a{
+    opacity: 0.5;
+}
+.test a:hover{
+    opacity: 1;
+}
+.test a:after{
+    content: ">";
+    color: white;
+    padding: 0 0.5em;
+}
+.test h2{
+    display : inline;
+    
+}
+.footer > p{
+    padding-bottom: 1em;
+    font-size: 0.9em;
+}
+.foot-align a, .footer-bottom a{
+    padding: 0.5em;
+    display: block;
+    text-decoration: none;
+    margin: 0.5em 0;
+    color: #ffffff;
+    margin: 0 auto;
+    width: fit-content;
+}
+.foot-align a:hover, .footer-bottom a:hover{
+    color: lightgreen;
+    text-decoration: underline;
+}
 
+.icon{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+    color: white;  
+    
+}
+.small{
+    font-size: small;
+}
+.icon a{
+    color:white;
+    display: inline-block; 
+    padding: 0;
+}
+.icon a:hover{
+    color: #ffffff;
+}
+.icon i{
+    padding: 1rem 1rem;
+    background: #6f727f;
+    transition: background-color 1s;
+    border-radius: 1.5em;
+}
+.f:hover{
+  background-color: #3b5998;
+}
+.t:hover{
+    background-color: #1da1f2;
+}
+.i:hover{
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.in:hover{
+    background-color: #0e76a8;
+}
+.y:hover{
+    background-color: #ff0000;  
+}
+.copyright{
+    margin-top: 1em;
+}
+.orBetween{
+    width: 100%;
+    border-bottom: 1.5px solid #DEB406; 
+    line-height: 0.1em;   
+}
+
+.footer-bottom{
+    padding: 1em 0;
+}
+/* .footer-bottom a{
+    padding: 0.5em;
+} */
+/* css for footer ends here */
+.visible{
+    display: block;
+    
+}
+.invisible{
+    display: none;
+}
 
 /* Media Query Breakpoint */
 @media screen and (min-width: 40em) {
-        
+   /* media queries for header */
+   .navbar{
+    grid-template-columns: 12.5em auto 2em 4.2em;
+    grid-template-areas: "logo men srch acon";
+    }
+    .drop-menu{
+        display: none;
+    }
+    .logoPlace{
+        text-align: left;
+        margin-left: 0.5em;
+    }    
+    .mainmenu
+    {
+        padding-left: 0;
+        display: block;
+        /* display: flex; */
+        /* justify-content: space-around; */
+    }
+    .mainmenu > ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .searchbar{
+        display: block;
+        padding-top: 0.5em;
+        position: relative;  
+    }
+    .srchicon
+    {
+        display: block;
+        grid-area: srch;
+        color:white;
+        text-align: center;
+    }
+    .notVisible{
+        display: none;
+    }
+    .makeVisible{
+        /* display:inline-block; */
+        position: absolute;
+        top: 2em;
+        right: -3em;
+        z-index: 2;
+    }
+    /* media queries for footer */
+    .foot-align{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:  "progr stude"
+                            "myhum conta"
+                            "icon icon";
+    }
+    .test{
+        text-align: left;
+    }
+    .icon{
+        grid-area: icon;
+    }
+    .footer-bottom{
+        margin: 0 auto;
+        width: fit-content;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-bottom :first-child, .footer-bottom :nth-child(2), .footer-bottom :nth-child(3){
+        border-right: 1px solid #DEB406;
+    }
+    .footer-bottom a{
+        padding: 0  1em;
+    }
+
+    /* media queries for footer -end */
+    
+    /* media queries for header- end */    
+}
+@media screen and (min-width: 75em) {
+    body{
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .navbar{
+        grid-template-columns: 12.5em auto 17em 4.2em;
+        grid-template-areas: "logo men srch acon";
+    }
+    .search, .searchbar label{
+        display: inline-block;  
+    }
+    .foot-align{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
+        grid-template-areas: "progr stude myhum conta icon";
+        margin-bottom: 1em;
+    }
+    .icon{
+        margin-top: 0.25em;
+    }
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 2fr 5fr;
+    }
+    .footer-bottom{
+        margin-right:0 ;
+    }
 }
