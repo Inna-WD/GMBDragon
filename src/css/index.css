@@ -154,6 +154,9 @@ body {
   margin: 0 auto;
   width: fit-content;
 }
+.foot-align a{
+    color: #B7B7B7;
+}
 .foot-align a:hover,
 .footer-bottom a:hover {
   text-decoration: underline;
