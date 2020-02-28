@@ -24,11 +24,6 @@ function searchVisible() /* make search on tablet screen size */
     document.getElementById("search").children[1].classList.toggle("notVisible");
     document.getElementById("search").children[1].classList.toggle("makeVisible");  
    }
-   if (window.innerWidth > 1200)
-   {
-   document.getElementById("search").children[0].classList.toggle("searchVisible");  
-    document.getElementById("search").children[1].classList.toggle("searchVisible");
-   }
 }
 
 
