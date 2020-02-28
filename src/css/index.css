@@ -13,7 +13,6 @@
 /* General CSS */
 body{
     font-family: var(--mainFont);
-    padding: 1em;
 }
 
 /* CSS for header */
