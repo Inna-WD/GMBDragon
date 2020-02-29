@@ -12,9 +12,8 @@
 }
 
 /* General CSS */
-body {
-  font-family: var(--mainFont);
-  /* padding: 1em; */
+body{
+    font-family: var(--mainFont);
 }
 
 /* CSS for header */
