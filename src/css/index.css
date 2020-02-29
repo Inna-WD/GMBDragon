@@ -113,6 +113,38 @@ body{
 /* CSS for header ends */
 
 /* CSS for main content */
+/* css for students page */
+.student-name{
+  color: var(--primaryThemeColor);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 0.15rem;
+}
+
+.student-position{
+  color: var(--primaryThemeColor-neutral);
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+.student-basic{
+  padding-top: 2em;
+}
+
+.student-basic img{
+  display: block;
+  border-radius: 50%;
+  max-width: 50%;
+  margin: 0.5em auto;
+}
+
+.student-basic a{
+  text-decoration: none;
+}
+
 /* css for student personal page */
 .class-of{
   display: grid;
@@ -199,6 +231,7 @@ body{
 .portfolio-link a:hover{
   color: var(--primaryThemeColor-neutral);  
 }
+
 .personal-social-media{
   display: grid;
   grid-template-columns: 2em 2em 2em 2em 2em;
@@ -445,6 +478,12 @@ body{
   /* media queries for footer -end */
 
   /* media queries for header- end */
+
+  /* breakpoint for students page */
+  .all-students{
+    display: grid;
+    grid-template-columns: 15em 15em 15em;
+  }
 }
 @media screen and (min-width: 75em) {
   body {
@@ -480,6 +519,12 @@ body{
   .footer-bottom {
     margin-right: 0;
   }
+
+  /* breakpoint for students page */
+  .all-students{
+    display: grid;
+    grid-template-columns: 17em 17em 17em 17em;
+  }
   
   /* breakpoint for student personal page */
   .graduation{
@@ -501,4 +546,5 @@ body{
     grid-area: indepth;
     padding-left: 5em;
   }
+
 }
