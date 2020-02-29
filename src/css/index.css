@@ -5,7 +5,8 @@
 :root {
   --mainFont: "Source Sans Pro", "Open Sans", "Helvetica Neue", sans-serif;
   /*  */
-  --primaryThemeColor: #00275e;
+
+  --primaryThemeColor: #014B77;
   --primaryThemeColor-light: #deb406;
   --primaryThemeColor-neutral: #747171;
   
@@ -13,16 +14,16 @@
 }
 
 /* General CSS */
-body {
-  font-family: var(--mainFont);
-  /* padding: 1em; */
+body{
+    font-family: var(--mainFont);
 }
 
 /* CSS for header */
 .header {
   background-color: var(--primaryThemeColor);
   width: 100%;
-  padding: 0.4em 0;
+  padding: 0.2em 0;
+
   /* position: fixed;
     top: 0; 
     left: 0; */
@@ -42,24 +43,25 @@ body {
 }
 .drop-menu > button {
   border: none;
-  color: red;
+  color: white;
   background-color: var(--primaryThemeColor);
 }
 .logoPlace {
   grid-area: logo;
   text-align: center;
+  padding-top: 0.1em;
 }
 .logo {
   height: auto;
-  max-height: 40px;
+  max-height: 35px;
 }
 .account {
   grid-area: acon;
   vertical-align: middle;
 }
 .account button {
-  font-size: 2.2em;
-  color: red;
+  font-size: 2em;
+  color: white;
   background-color: var(--primaryThemeColor);
   border: none;
 }
@@ -94,17 +96,20 @@ body {
   display: none;
   text-align: left;
   padding-left: 1em;
+  width: fit-content;
 }
 .mainmenu a {
   display: block;
   color: white;
   text-decoration: none;
-  line-height: 2.5;
+  font-family: var(--mainFont);
+  line-height: 2;
 }
 .mainmenu a:hover {
-  color: #000000;
-  background-color: #aaaaaa;
-}
+    border-bottom: 1px solid #ffffff;
+  }
+
+
 /* CSS for header ends */
 
 /* CSS for main content */
@@ -269,7 +274,10 @@ body {
 .footer {
   background-color: #2c333a;
   color: white;
-  text-align: center;
+  /* text-align: center; */
+}
+.footer a{
+    font-family: var(--mainFont);
 }
 .test {
   padding-top: 1em;
@@ -288,28 +296,41 @@ body {
 }
 .test h2 {
   display: inline;
+  color: #B7B7B7;
 }
 .footer > p {
   padding-bottom: 1em;
   font-size: 0.9em;
 }
+
+.test {
+    text-align: left;
+}
+.foot-align{
+  margin-top: 1em;
+}  
 .foot-align a,
 .footer-bottom a {
   padding: 0.5em;
   display: block;
   text-decoration: none;
-  margin: 0.5em 0;
   color: #ffffff;
-  margin: 0 auto;
+  margin-left: 0.75em;
   width: fit-content;
+}
+.foot-align a{
+    color: #B7B7B7;
+    margin: 0 auto;
 }
 .foot-align a:hover,
 .footer-bottom a:hover {
-  color: lightgreen;
   text-decoration: underline;
 }
-
+.fut-std{
+    grid-area: myhum;
+}
 .icon {
+  grid-area: icon;
   font-size: 1.5em;
   text-align: center;
   margin: 0 auto;
@@ -322,10 +343,9 @@ body {
   color: white;
   display: inline-block;
   padding: 0;
+  margin: 0;
 }
-.icon a:hover {
-  color: #ffffff;
-}
+
 .icon i {
   padding: 1rem 1rem;
   background: #6f727f;
@@ -357,6 +377,7 @@ body {
 }
 .copyright {
   margin-top: 1em;
+  margin-left: 1em;
 }
 .orBetween {
   width: 100%;
@@ -379,6 +400,18 @@ body {
 }
 
 /* Media Query Breakpoint */
+@media screen and (min-width: 430px) {
+  .foot-align {
+    display: grid;
+    grid-template-columns: 0.9fr auto 0.9fr;
+    grid-gap: 0.5em;
+    grid-template-areas:
+      "progr stude conta"
+      ". myhum ."
+      "icon icon icon";
+  }
+  
+}
 @media screen and (min-width: 40em) {
   /* media queries for header */
   .navbar {
@@ -390,21 +423,23 @@ body {
   }
   .logoPlace {
     text-align: left;
-    margin-left: 0.5em;
+    margin-left: 0.75em;
+    padding-top: 0.3em;
   }
   .mainmenu {
     padding-left: 0;
     display: block;
-    /* display: flex; */
-    /* justify-content: space-around; */
+    width: auto;
   }
   .mainmenu > ul {
+    padding-top: .25em;
     display: flex;
     justify-content: space-evenly;
   }
+  
   .searchbar {
     display: block;
-    padding-top: 0.5em;
+    padding-top: 0.45em;
     position: relative;
   }
   .srchicon {
@@ -424,20 +459,7 @@ body {
     z-index: 2;
   }
   /* media queries for footer */
-  .foot-align {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "progr stude"
-      "myhum conta"
-      "icon icon";
-  }
-  .test {
-    text-align: left;
-  }
-  .icon {
-    grid-area: icon;
-  }
+  
   .footer-bottom {
     margin: 0 auto;
     width: fit-content;
@@ -469,12 +491,17 @@ body {
     margin: 0 auto;
   }
   .navbar {
-    grid-template-columns: 12.5em auto 17em 4.2em;
+    grid-template-columns: 12.5em auto 16em 4.2em;
     grid-template-areas: "logo men srch acon";
   }
   .search,
-  .searchbar label {
+  .Slabel {
     display: inline-block;
+    opacity: 0;
+  }
+  .searchVisible{
+    opacity: 1;
+
   }
   .foot-align {
     display: grid;
