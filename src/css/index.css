@@ -429,7 +429,10 @@ body {
   }
   .mainmenu > ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+  }
+  .mainmenu li{
+    margin: 0 1.5em;
   }
   
   .searchbar {
