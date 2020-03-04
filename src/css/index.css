@@ -25,7 +25,7 @@ body {
   padding: 0.2em 0;  
 }
 .navbar {
-  /* padding: 0.5em 0.5em; */
+  padding: 1em 1em;
   display: grid;
   grid-template-columns: 2em auto 4em;
   grid-template-areas:
@@ -35,7 +35,7 @@ body {
 }
 .drop-menu {
   grid-area: drop;
-  padding: 0.5em 0 0 0.5em;
+  padding-top: 0.5em;
 }
 .drop-menu > button {
   border: none;
@@ -54,6 +54,7 @@ body {
 .account {
   grid-area: acon;
   vertical-align: middle;
+  text-align: right;
 }
 .account button {
   font-size: 2em;
@@ -66,7 +67,6 @@ body {
 }
 .searchbar {
   grid-area: srch;
-  padding-top: 0.5em;
   display: none;
   color: white;
 }
@@ -80,12 +80,12 @@ body {
 }
 
 .search {
-  /* background-color:#dddddd; */
-  border: black 0.05em solid;
-  border-radius: 0.5em;
   color: #aaaaaa;
   padding: 0.2em;
-  /* font-size: 0.9em; */
+  height: 1.5em;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9em;
 }
 .mainmenu {
   grid-area: men;
@@ -408,10 +408,11 @@ body {
   }
   
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 55em) {
   /* media queries for header */
   .navbar {
-    grid-template-columns: 12.5em auto 2em 4.2em;
+    padding: 1em 2em;
+    grid-template-columns: 12.5em auto minmax(1.5em, max-content) 4em;
     grid-template-areas: "logo men srch acon";
   }
   .drop-menu {
@@ -419,8 +420,6 @@ body {
   }
   .logoPlace {
     text-align: left;
-    margin-left: 0.75em;
-    padding-top: 0.3em;
   }
   .mainmenu {
     padding-left: 0;
@@ -438,23 +437,22 @@ body {
   .searchbar {
     display: block;
     padding-top: 0.45em;
-    position: relative;
+  }
+  .searchbar label {
+    margin-left: 0;
   }
   .srchicon {
     display: block;
     grid-area: srch;
     color: white;
-    text-align: center;
+    /* text-align: center; */
   }
   .notVisible {
     display: none;
   }
   .makeVisible {
-    /* display:inline-block; */
-    position: absolute;
-    top: 2em;
-    right: -3em;
-    z-index: 2;
+    display:inline-block;
+   
   }
   /* media queries for footer */
   
@@ -483,20 +481,7 @@ body {
     grid-template-columns: 15em 15em 15em;
   }
 }
-@media screen and (min-width: 75em) {
-  .navbar {
-    grid-template-columns: 12.5em auto 16em 4.2em;
-    grid-template-areas: "logo men srch acon";
-  }
-  .search,
-  .Slabel {
-    display: inline-block;
-    opacity: 0;
-  }
-  .searchVisible{
-    opacity: 1;
-
-  }
+@media screen and (min-width: 80em) {
   .test{
     max-width: 1600px;
     margin: 0 auto;
