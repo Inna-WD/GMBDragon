@@ -129,7 +129,7 @@ body {
 }
 .program-info-nav{
 display:grid;
-grid-template-columns: repeat(5, 1fr);
+grid-template-columns: repeat(7, 1fr);
 }
 
 .program-button{
@@ -146,6 +146,19 @@ grid-template-columns: repeat(5, 1fr);
   background-color:#967136;
   }
 
+  .program-window{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-color: black;
+  border:1px;
+  }
+  .program-block{
+    width: 30em;
+    height: 30em;
+    display:inline-block;
+    border-color: black;
+    border: 1px;
+  }
 
 /* mobile responsiveness */
 @media screen and (max-width: 768px) {
