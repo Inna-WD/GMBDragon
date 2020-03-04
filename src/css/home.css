@@ -146,6 +146,30 @@ grid-template-columns: repeat(7, 1fr);
   background-color:#967136;
   }
 
+.program-page-two-columns-structure{
+    display: grid;
+    grid-template-columns: 20em  77em;
+    grid-template-areas:  "intro indepth";
+    padding-top: 3em;
+    text-align: justify;
+  }
+.program-page-left-panel{
+  grid-area: intro;
+}
+
+.font-bold{
+  font-style: bold;
+}
+
+.fond-bold-red{
+  font-style: bold;
+  color: #910412;
+}
+.fond-bold-green{
+  font-style: bold;
+  color: #22620C;
+}
+  
   .program-window{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
@@ -159,6 +183,10 @@ grid-template-columns: repeat(7, 1fr);
     border-color: black;
     border: 1px;
   }
+
+
+
+
 
 /* mobile responsiveness */
 @media screen and (max-width: 768px) {
