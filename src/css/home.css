@@ -119,6 +119,10 @@ body {
 }
 
 /* Design of the program page */
+.program-home {
+  margin:1em;
+}
+
 .program-banner {
   background-image: url("/img/program.png");
   background-repeat: no-repeat;
@@ -148,9 +152,9 @@ grid-template-columns: repeat(7, 1fr);
 
 .program-page-two-columns-structure{
     display: grid;
-    grid-template-columns: 20em  77em;
-    grid-template-areas:  "intro indepth";
-    padding-top: 3em;
+    grid-template-columns: 20em  auto;
+    grid-template-areas:  "intro";
+    padding-top: 1em;
     text-align: justify;
   }
 .program-page-left-panel{
@@ -158,36 +162,62 @@ grid-template-columns: repeat(7, 1fr);
 }
 
 .font-bold{
-  font-style: bold;
+  font-weight: bold;
 }
 
-.fond-bold-red{
-  font-style: bold;
+.font-bold-red{
+  font-weight: bold;
   color: #910412;
 }
-.fond-bold-green{
-  font-style: bold;
+.font-bold-green{
+  font-weight: bold;
   color: #22620C;
 }
-  
-  .program-window{
+  .class-button{
+    width: 14em;
+    height: 2em;
+    padding:6px;
+    text-align: center;
+    vertical-align:center;
+    margin:10px;
+    background-color:#C4C4C4;
+  } 
+.class-button:hover{
+  background-color:grey;  
+}
+.class-button a{
+  text-decoration: none;
+}
+.success-stories{
   display:grid;
-  grid-template-columns: repeat(2, 1fr);
-  border-color: black;
-  border:1px;
-  }
-  .program-block{
-    width: 30em;
-    height: 30em;
-    display:inline-block;
-    border-color: black;
-    border: 1px;
-  }
+  grid-template-columns: 20em  auto;
+  border: 1px solid black;
+}
 
+.student-program{
+  padding-top: 2em;
+  border-right: 1px solid black;;
+}
 
+.student-program img{
+  display: block;
+  border-radius: 50%;
+  max-width: 50%;
+  margin: 0.5em auto;
+}
 
+.student-program a{
+  text-decoration: none;
+}
 
-
+.success-graduation{
+  color: var(--primaryThemeColor-light);
+  font-weight: bold;
+  padding: 1em;
+}
+.success-content{
+  padding: 1em;
+}
 /* mobile responsiveness */
 @media screen and (max-width: 768px) {
   .home .program-grid {
