@@ -9,7 +9,7 @@ const routes = [
   { route: "/", component: Home, default: true },
   { route: "/programs", component: Programs },
   { route: "/students", component: Students },
-  { route: "/studentProfile", component: StudentProfile },
+  { route: "/students/:param", component: StudentProfile },
   { route: "/404", component: NotFound404 }
 ];
 

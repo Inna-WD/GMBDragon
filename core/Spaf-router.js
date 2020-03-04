@@ -7,8 +7,8 @@ export const getRoutesObject = routes =>
     {}
   );
 
-export const goToPage = (root, component) => {
-  const html = component();
+export const goToPage = (root, component, params) => {
+  const html = component(params);
   flush(root());
   render(html, root());
 };
@@ -30,7 +30,13 @@ export const init = (rootElm, routeHash) => {
 
   //listen to navigation history event
   window.addEventListener("popstate", e => {
-    goToPage(rootElm, routeHash[window.location.pathname]);
+    console.log(routeHash, )
+    const path = window.location.pathname.replace(/^\/+/g, '').split('/');
+    let route = `/${path[0]}`;
+    if(path.length > 1) {
+      route = route + '/:param'
+    }
+    goToPage(rootElm, routeHash[route], path[1]);
   });
 };
 
