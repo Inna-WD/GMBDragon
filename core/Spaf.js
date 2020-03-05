@@ -7,11 +7,12 @@
 /**
  * function creates new instance of spa and sets root element as parent
  */
+let ROOT_ELEMENT = null;
+
 export default function() {
-  this.ROOT_ELEMENT = null;
   return {
-    setRootElement: element => (this.ROOT_ELEMENT = element),
-    getRootElement: () => this.ROOT_ELEMENT
+    setRootElement: element => (ROOT_ELEMENT = element),
+    getRootElement: () => ROOT_ELEMENT
   };
 }
 

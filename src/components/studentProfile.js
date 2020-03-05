@@ -1,7 +1,7 @@
 import { html } from "../../core/Spaf.js";
 
-const StudentProfilePage = () => {
-  console.log("Student Profile page");
+const StudentProfilePage = (id) => {
+  console.log("Student Profile page", id);
   return html`
   <main class="class-of">
     <h1 class="graduation">Class of 2020 </h1>
