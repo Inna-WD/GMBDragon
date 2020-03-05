@@ -218,6 +218,12 @@ grid-template-columns: repeat(7, 1fr);
 .success-content{
   padding: 1em;
 }
+
+.profession-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:1em;
+}
 /* mobile responsiveness */
 @media screen and (max-width: 768px) {
   .home .program-grid {

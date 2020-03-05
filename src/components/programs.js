@@ -122,10 +122,39 @@ const ProgramsPage = () => {
             </div>
          </article>
 
-       <article>
+       <article >
           <h2 class="main-text">Possible carrer paths</h2>
+          <div class="profession-grid">
 
+              <div>
+              <img src="/img/prof1.png">
+              </div>
 
+              <div>
+              <img src="/img/prof2.png">
+
+              </div>
+
+              <div>
+              <img src="/img/prof3.png">
+
+              </div>
+
+              <div>
+              <img src="/img/prof4.png">
+
+              </div>
+
+              <div>
+              <img src="/img/prof5.png">
+
+              </div>
+
+              <div>
+              <img src="/img/prof6.png">
+
+              </div>
+            </div>
          </article>
 
 
