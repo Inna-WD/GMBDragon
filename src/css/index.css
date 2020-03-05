@@ -11,6 +11,7 @@
   --primaryThemeColor-neutral: #747171;
   
   --defaultColor: rgb(0, 0, 0);
+  --lightColor: rgb(243, 243, 243);
 }
 
 /* General CSS */
@@ -114,6 +115,57 @@ body{
 
 /* CSS for main content */
 /* css for students page */
+label.program-choice {
+  cursor: pointer;
+}
+
+label.program-choice input {
+  position: absolute;
+  visibility: hidden;
+}
+
+label.program-choice span {
+  padding: 0.8em;
+  border: 0.1em solid var(--lightColor);
+  display: inline-block;
+  color: var(--primaryThemeColor);
+  border-radius: 0.2em;
+  text-transform: uppercase;
+  min-width: 23.5em;
+}
+
+label.program-choice input:checked + span {
+  border-color: var(--primaryThemeColor-light);
+}
+
+.sort-option select{
+  border:0px;
+  outline:0px;
+}
+.sort-option{
+  display: grid;
+  grid-template-areas:  "program studentName";
+  padding: 1em;
+  justify-content: space-around;
+}
+
+.sort-program{
+  grid-area: program;
+}
+
+.sort-job-position{
+  grid-area: jobPosition;
+}
+
+.sort-name{
+  grid-area: studentName;
+}
+
+.students-headshot{
+  display: grid;
+  justify-content: center;
+}
+
 .student-name{
   color: var(--primaryThemeColor);
   text-transform: uppercase;
@@ -480,6 +532,11 @@ body{
   /* media queries for header- end */
 
   /* breakpoint for students page */
+  .student-program-choice{
+    text-align: center;
+    padding-top: 1em;
+  }
+
   .all-students{
     display: grid;
     grid-template-columns: 15em 15em 15em;
