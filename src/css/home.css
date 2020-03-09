@@ -118,6 +118,112 @@ body {
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
+/* Design of the program page */
+.program-home {
+  margin:1em;
+}
+
+.program-banner {
+  background-image: url("/img/program.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  box-sizing: border-box;
+}
+.program-info-nav{
+display:grid;
+grid-template-columns: repeat(7, 1fr);
+}
+
+.program-button{
+  width: 14em;
+  height: 2em;
+  padding:6px;
+  text-align: center;
+  vertical-align:center;
+  color:white;
+  margin:10px;
+  background-color:#d7b57f;
+  } 
+  .program-button:hover{
+  background-color:#967136;
+  }
+
+.program-page-two-columns-structure{
+    display: grid;
+    grid-template-columns: 20em  auto;
+    grid-template-areas:  "intro";
+    padding-top: 1em;
+    text-align: justify;
+  }
+.program-page-left-panel{
+  grid-area: intro;
+}
+
+.font-bold{
+  font-weight: bold;
+}
+
+.font-bold-red{
+  font-weight: bold;
+  color: #910412;
+}
+.font-bold-green{
+  font-weight: bold;
+  color: #22620C;
+}
+  .class-button{
+    width: 14em;
+    height: 2em;
+    padding:6px;
+    text-align: center;
+    vertical-align:center;
+    margin:10px;
+    background-color:#C4C4C4;
+  } 
+.class-button:hover{
+  background-color:grey;  
+}
+.class-button a{
+  text-decoration: none;
+}
+.success-stories{
+  display:grid;
+  grid-template-columns: 20em  auto;
+  border: 1px solid black;
+}
+
+.student-program{
+  padding-top: 2em;
+  border-right: 1px solid black;;
+}
+
+.student-program img{
+  display: block;
+  border-radius: 50%;
+  max-width: 50%;
+  margin: 0.5em auto;
+}
+
+.student-program a{
+  text-decoration: none;
+}
+
+.success-graduation{
+  color: var(--primaryThemeColor-light);
+  font-weight: bold;
+  padding: 1em;
+}
+.success-content{
+  padding: 1em;
+}
+
+.profession-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:1em;
+}
 /* mobile responsiveness */
 @media screen and (max-width: 768px) {
   .home .program-grid {
