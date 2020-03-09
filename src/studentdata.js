@@ -194,7 +194,10 @@ export default {
                     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Earum tenetur adipisci modi.'
                 }
             ],
-            skills: 'CSS, HTML, Javascript, Node.js, Shopify, Adobe:XD, Photoshop, After Effects, Illustrator Team Work, Collaboration',
+            skills: {
+                hard: 'CSS, HTML, Javascript, Node.js, Shopify, Adobe:XD, Photoshop, After Effects, Illustrator',
+                soft: 'Team Work, Collaboration'
+            },
             languages: 'English, Hebrew, Russian, Spanish'
 
         }
