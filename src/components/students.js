@@ -62,7 +62,7 @@ const StudentsPage = () => {
                 
                 <article class="student-basic">
                     <img src="/img/inna_pro_pic.jpg" alt="professional image" class="student-image">
-                    <h1 class="student-name">Inna Manova</h1>
+                    <h1 class="student-name"><a href="/students/n01384347">Inna Manova</a></h1>                    
                     <h2 class="student-position">Web Designer</h2>
                 </article>
 
