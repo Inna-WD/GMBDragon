@@ -59,7 +59,74 @@ export default {
                     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Earum tenetur adipisci modi.'
                 }
             ],
-            skills: 'CSS, HTML, Javascript, Node.js, Shopify, Adobe:XD, Photoshop, After Effects, Illustrator Team Work, Collaboration',
+            skills: {
+                hard: 'CSS, HTML, Javascript, Node.js, Shopify, Adobe:XD, Photoshop, After Effects, Illustrator',
+                soft: 'Team Work, Collaboration'
+            },
+            languages: 'English, Nepalese'
+
+        },
+        {
+            studentId: 'n01271571',
+            name: 'Bijay Bahadur Karki',
+            classOf: '2020',
+            currentPosition: 'Application Engineer',
+            profileImg: '/img/bijay_pro_pic.png',
+            address: '27 Nomad cres, Brampton, ON',
+            email: 'bijay.jhupro@gmail.com',
+            phoneNumber: '437-228-1850',
+            introMsg: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nobis nisi ut eligendi temporibus harum autem amet fugiat quae. At beatae sunt iusto reiciendis eaque unde nesciunt vero repellendus. Iste',
+            whyHumber: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur adipisci modi. Eos quis esse expedita impedit qui dolorum explicabo sapiente consequatur, ea, sequi minima natus blanditiis eaque inventore quidem?',
+            majorAchievements: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur adipisci modi. Eos quis esse expedita impedit qui dolorum explicabo sapiente consequatur, ea, sequi minima natus blanditiis eaque inventore quidem?',
+            portfolio: {
+                personalSite: '',
+                github: '',
+                shopify: '',
+                others: ''
+            },
+            socialMediaLinks: {
+                facebook: '',
+                twitter: '',
+                googlePlus: '',
+                skype: '',
+                linkedIn: 'https://www.linkedin.com/in/bijay-bahadur-karki/',
+            },
+            experience : [
+                {
+                    position: 'Web Developer',
+                    company: 'Humber College',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur adipisci modi. Eos quis esse expedita impedit qui dolorum explicabo sapiente consequatur, ea, sequi minima natus blanditiis eaque inventore quidem?'
+
+                },
+                {
+                    position: 'Lecturer and Project Supervisor',
+                    company: 'Himalaya College of Engineering',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur adipisci modi. Eos quis esse expedita impedit qui dolorum explicabo sapiente consequatur, ea, sequi minima natus blanditiis eaque inventore quidem?'
+
+                },
+                {
+                    position: 'Network Admin & Lab Co-Ordinator',
+                    company: 'Himalaya College of Engineering',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur adipisci modi. Eos quis esse expedita impedit qui dolorum explicabo sapiente consequatur, ea, sequi minima natus blanditiis eaque inventore quidem?'
+
+                }
+            ],
+            education : [
+                {
+                    school: 'HUMBER COLLEGE',
+                    program: 'Certification in Web Design and Development',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Earum tenetur adipisci modi.'
+                },
+                {
+                    school: 'Himalaya College of Engineering',
+                    program: 'B.E. in Electronics and Communication',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Earum tenetur adipisci modi.'
+                }
+            ],
+            skills: {
+                hard : 'CSS, HTML, Javascript, Node.js, Shopify, Adobe:XD, Photoshop, After Effects, Illustrator',
+                soft :  'Team Work, Collaboration'
+            },
             languages: 'English, Nepalese'
 
         },

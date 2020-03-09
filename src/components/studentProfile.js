@@ -75,11 +75,11 @@ const StudentProfilePage = (id) => {
 
                     <div>
                         <ul class="personal-social-media">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="${student.socialMediaLinks.facebook}"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="${student.socialMediaLinks.twitter}"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="${student.socialMediaLinks.googlePlus}"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="${student.socialMediaLinks.skype}"><i class="fab fa-skype"></i></a></li>
+                            <li><a href="${student.socialMediaLinks.linkedIn}"><i class="fab fa-linkedin-in"></i></a></li>
                         </ul>
                     </div>
                 </section>
@@ -95,26 +95,26 @@ const StudentProfilePage = (id) => {
                     <hr class="horizontal-line">
                     <article>
                         <ul>
-                            <li class="job-position">Application Systems Engineer</li>
-                            <li class="company-name">Wells Fargo</li>
+                            <li class="job-position">${student.experience[0].position}</li>
+                            <li class="company-name">${student.experience[0].company}</li>
                         </ul>
-                        <p class="paragraph-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur adipisci modi. Eos quis esse expedita impedit qui dolorum explicabo sapiente consequatur, ea, sequi minima natus blanditiis eaque inventore quidem?</P>
+                        <p class="paragraph-content">${student.experience[0].description}</p>
                     </article>
 
                     <article>
                         <ul>
-                            <li class="job-position">Application Developer</li>
-                            <li class="company-name">Accenture</li>
+                            <li class="job-position">${student.experience[1].position}</li>
+                            <li class="company-name">${student.experience[1].company}</li>
                         </ul>
-                        <p class="paragraph-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur adipisci modi. Eos quis esse expedita impedit qui dolorum explicabo sapiente consequatur, ea, sequi minima natus blanditiis eaque inventore quidem?</P>
+                        <p class="paragraph-content">${student.experience[1].description}</p>
                     </article>
 
                     <article>
                         <ul>
-                            <li class="job-position">Software Developer</li>
-                            <li class="company-name">Dell Inc.</li>
+                            <li class="job-position">${student.experience[2].position}</li>
+                            <li class="company-name">${student.experience[2].company}</li>
                         </ul>
-                        <p class="paragraph-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur adipisci modi. Eos quis esse expedita impedit qui dolorum explicabo sapiente consequatur, ea, sequi minima natus blanditiis eaque inventore quidem?</P>
+                        <p class="paragraph-content">${student.experience[2].description}</p>
                     </article>
                 </section>
 
@@ -127,17 +127,17 @@ const StudentProfilePage = (id) => {
                     <hr class="horizontal-line">
                     <article>
                         <ul>
-                            <li class="job-position">Humber College</li>
-                            <li class="company-name">Certification in Web Design and Development</li>
+                            <li class="job-position">${student.education[0].school}</li>
+                            <li class="company-name">${student.education[0].program}</li>
                         </ul>
-                        <p class="paragraph-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.Earum tenetur adipisci modi. </P>
+                        <p class="paragraph-content">${student.education[0].description} </P>
                     </article>
                     <article>
                         <ul>
-                            <li class="job-position">Tarleton State University</li>
-                            <li class="company-name">Bsc in Computer Information Systems</li>
+                            <li class="job-position">${student.education[1].school}</li>
+                            <li class="company-name">${student.education[1].program}</li>
                         </ul>
-                        <p class="paragraph-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur adipisci modi. Eos quis esse expedita impedit qui dolorum explicabo sapiente consequatur</P>
+                        <p class="paragraph-content">${student.education[1].description}</P>
                     </article>
                 </section>
 
@@ -150,8 +150,8 @@ const StudentProfilePage = (id) => {
                     
                     <hr class="horizontal-line">
                     <article>
-                        <p class="paragraph-content">CSS, HTML, Javascript, Node.js, Shopify, Adobe:XD, Photoshop, After Effects, Illustrator</P>
-                        <p class="paragraph-content">Team Work, Collaboration</P>
+                        <p class="paragraph-content">${student.skills.hard}</P>
+                        <p class="paragraph-content">${student.skills.soft}</P>
                     </article>
                 </section>
 
@@ -163,7 +163,7 @@ const StudentProfilePage = (id) => {
                     </div>
                     <hr class="horizontal-line">
                     <article>
-                        <p class="paragraph-content">English, Nepalese</P>
+                        <p class="paragraph-content">${student.languages}</P>
                     </article>
                 </section>
             </div>
