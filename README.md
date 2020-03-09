@@ -37,8 +37,32 @@ The goal of the project is to create first colloborative work experience using t
         - Active setup of the requires work environments - slack, github, figma, flowmapp
         - Tests of the issues and branch creation in the github project
 
-### 3.3 Protoype
+### 3.3 Prototype
+        - Creating the low level design prototype in Figma
+        - Creating the high level design prototype in Figma       
+        - Getting an approval from the "customer"
+        - Implementing the changes in the  high level design prototype
+        - Creating the mobile format of the prototype
+        - creating the functional prototype
+
 ### 3.4 Development
+        - Opening issues, branches in the github organization
+        - Additinal "buffer" branch - develop - was created. This is to increase the security of the master branch
+        - Opening the directory with the main file and directory
+        - Creating the github.io 
+        - Development of the separate pieces of the project according to division to following modules:
+            - Header
+            - Footer
+            - Faculty page
+            - Program page
+            - Class of 2019-20 page
+            - Student personal page
+        - Each one of the branches is commited and them mergered into deveop branch. The develop branch is merged into the master branch
+        
+
+
+
+
 ### 3.5 Approvals + tests
 
 
