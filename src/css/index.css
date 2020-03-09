@@ -12,11 +12,19 @@
   
   --defaultColor: rgb(0, 0, 0);
   --lightColor: rgb(243, 243, 243);
+  --errorColor: rgb(224, 6, 6);
 }
 
 /* General CSS */
 body {
   font-family: var(--mainFont);
+}
+
+.url-error{
+  color: var(--errorColor);
+  font-size: x-large;
+  text-align: center;
+  padding: 5em;
 }
 
 /* CSS for header */
