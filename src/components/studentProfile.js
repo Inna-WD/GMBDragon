@@ -1,17 +1,19 @@
 import { html } from "../../core/Spaf.js";
+import data from '../studentdata.js'; // from fake DB
 
 const StudentProfilePage = (id) => {
-  console.log("Student Profile page", id);
-  return html`
+    const student = data.getStudentData(id);
+    console.log("Student Profile page", student);
+  const tempate = `
   <main class="class-of">
-    <h1 class="graduation">Class of 2020 </h1>
+    <h1 class="graduation">Class of ${student.classOf}</h1>
         <div class="student-profile">
             <div class="student-intro">
                 <section>
                     <article class="personal-basic">
-                        <h1 class="full-name">Bijaya Gautam</h1>
-                        <h2 class="professional-position">App System Engineer</h2>
-                        <img src="/img/bijaya_pro_pic.png" alt="professional image" class="pro-image">
+                        <h1 class="full-name">${student.name}</h1>
+                        <h2 class="professional-position">${student.currentPosition}</h2>
+                        <img src="${student.profileImg}" alt="professional image" class="pro-image">
                     </article>
                     
                     <article>
@@ -19,21 +21,21 @@ const StudentProfilePage = (id) => {
                         <div class="personal-contact">
                             <i class="fas fa-home"></i>
                             <p class="vertical-line"></p>
-                            <h3>79 Woodhaven Dr, Brampton, ON</h3>
+                            <h3>${student.address}</h3>
                         </div>
 
                         <hr>
                         <div class="personal-contact">
                             <i class="fas fa-envelope"></i>
                             <p class="vertical-line"></p>
-                            <h3>bijayagautam.ca@outlook.com</h3>
+                            <h3>${student.email}</h3>
                         </div>
                         
                         <hr>
                         <div class="personal-contact">
                             <i class="fas fa-mobile "></i>
                             <p class="vertical-line"></p>
-                            <h3>647-529-3579</h3>
+                            <h3>${student.phoneNumber}</h3>
                         </div>
                         <hr>
                     </article>
@@ -42,17 +44,17 @@ const StudentProfilePage = (id) => {
                 <section>
                     <article>
                         <h4 class="paragraph-title">Intro</h4>
-                        <p class="paragraph-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nobis nisi ut eligendi temporibus harum autem amet fugiat quae. At beatae sunt iusto reiciendis eaque unde nesciunt vero repellendus. Iste.</p>
+                        <p class="paragraph-content">${student.introMsg}</p>
                     </article>
 
                     <article>
                         <h4 class="paragraph-title">Why humber wddm?</h4>
-                        <p class="paragraph-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur adipisci modi. Eos quis esse expedita impedit qui dolorum explicabo sapiente consequatur, ea, sequi minima natus blanditiis eaque inventore quidem?</P>
+                        <p class="paragraph-content">${student.whyHumber}</P>
                     </article>
 
                     <article>
                         <h4 class="paragraph-title">What are your major achievements during your studies?</h4>
-                        <p class="paragraph-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur adipisci modi. Eos quis esse expedita impedit qui dolorum explicabo sapiente consequatur, ea, sequi minima natus blanditiis eaque inventore quidem?</P>
+                        <p class="paragraph-content">${student.majorAchievements}</P>
                     </article>
                 </section>
 
@@ -65,10 +67,10 @@ const StudentProfilePage = (id) => {
                     <hr class="horizontal-line">
 
                     <ul class="paragraph-content portfolio-link">
-                        <li><a href="#">Personal Site</a></li>
-                        <li><a href="https://github.com/bijayagautam">Git Hub</a></li>
-                        <li><a href="#">Shopify</a></li>
-                        <li>Other :</li>
+                        <li><a href="#">Personal Site: ${student.portfolio.personalSite}</a></li>
+                        <li><a href="https://github.com/${student.portfolio.github}">Git Hub: @${student.portfolio.github}</a></li>
+                        <li><a href="#">Shopify: ${student.portfolio.shopify}</a></li>
+                        <li>Other :${student.portfolio.others}</li>
                     </ul>
 
                     <div>
@@ -168,6 +170,8 @@ const StudentProfilePage = (id) => {
         </div>
     </main>
   `;
+
+  return html(tempate)
 };
 
 export default StudentProfilePage;
