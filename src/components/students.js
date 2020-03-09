@@ -68,7 +68,7 @@ const StudentsPage = () => {
 
                 <article class="student-basic">
                     <img src="/img/bijay_pro_pic.png" alt="professional image" class="student-image">
-                    <h1 class="student-name">Bijay Karki</h1>
+                    <h1 class="student-name"><a href="/students/n01271571">Bijay Karki</a></h1>
                     <h2 class="student-position">Application Engineer</h2>
                 </article>
             </section>
