@@ -200,7 +200,71 @@ export default {
             },
             languages: 'English, Hebrew, Russian, Spanish'
 
-        }
+        },
+        {
+            studentId: 'n01370825',
+            name: 'Joseph Lao',
+            classOf: '2020',
+            currentPosition: 'Web Developer',
+            profileImg: '/img/joseph_pro_pic.jpg',
+            address: '5625 Glen Erin Dr, Mississauga ON',
+            email: 'lao.josephv@gmail.com',
+            phoneNumber: '647-466-8738',
+            introMsg: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nobis nisi ut eligendi temporibus harum autem amet fugiat quae. At beatae sunt iusto reiciendis eaque unde nesciunt vero repellendus. Iste',
+            whyHumber: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur adipisci modi. Eos quis esse expedita impedit qui dolorum explicabo sapiente consequatur, ea, sequi minima natus blanditiis eaque inventore quidem?',
+            majorAchievements: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur adipisci modi. Eos quis esse expedita impedit qui dolorum explicabo sapiente consequatur, ea, sequi minima natus blanditiis eaque inventore quidem?',
+            portfolio: {
+                personalSite: 'sephlao.io',
+                github: 'sephlao',
+                shopify: '',
+                others: ''
+            },
+            socialMediaLinks: {
+                facebook: '',
+                twitter: '',
+                googlePlus: '',
+                skype: '',
+                linkedIn: '',
+            },
+            experience : [
+                {
+                    position: 'Web Developer',
+                    company: 'QIMA (formerly AsiaInspection)',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur adipisci modi. Eos quis esse expedita impedit qui dolorum explicabo sapiente consequatur, ea, sequi minima natus blanditiis eaque inventore quidem?'
+
+                },
+                {
+                    position: 'Software Engineer',
+                    company: 'Sense Software Solutions',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur adipisci modi. Eos quis esse expedita impedit qui dolorum explicabo sapiente consequatur, ea, sequi minima natus blanditiis eaque inventore quidem?'
+
+                },
+                {
+                    position: 'Freelance Web Developer',
+                    company: 'Upwork',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur adipisci modi. Eos quis esse expedita impedit qui dolorum explicabo sapiente consequatur, ea, sequi minima natus blanditiis eaque inventore quidem?'
+
+                }
+            ],
+            education : [
+                {
+                    school: 'Humber College',
+                    program: 'Certification in Web Design and Development',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Earum tenetur adipisci modi.'
+                },
+                {
+                    school: 'University of San Carlos',
+                    program: 'BS Information and Communications Technology',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Earum tenetur adipisci modi.'
+                }
+            ],
+            skills: {
+                hard: 'CSS, HTML, Javascript, Node.js, Shopify, Adobe:XD, Photoshop, After Effects, Illustrator',
+                soft: 'Team Work, Collaboration'
+            },
+            languages: 'English, Filipino, Cebuano'
+
+        },
     ],
 
     getAllStudents() {
