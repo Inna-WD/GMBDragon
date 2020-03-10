@@ -49,26 +49,26 @@ const StudentsPage = () => {
         <div class="students-headshot">
             <section class="all-students">
                 <article class="student-basic">
-                    <a href="#" onclick="loadStudent('n012345678')"><img src="/img/bijaya_pro_pic.png" alt="professional image" class="student-image"></a>
-                    <a href="/studentProfile" data-route="/studentProfile"><h1 class="student-name">Bijaya Gautam</h1></a>
+                    <img src="/img/bijaya_pro_pic.png" alt="professional image" class="student-image">
+                    <h1 class="student-name"><a href="/students/n012345678">Bijaya Gautam</a></h1>
                     <h2 class="student-position">App System Engineer</h2>
                 </article>
 
                 <article class="student-basic">
-                    <a href="/studentProfile" data-route="/studentProfile"><img src="/img/joseph_pro_pic.jpg" alt="professional image" class="student-image"></a>
-                    <a href="/studentProfile" data-route="/studentProfile"><h1 class="student-name">Joseph Lao</h1></a>
+                    <img src="/img/joseph_pro_pic.jpg" alt="professional image" class="student-image">
+                    <h1 class="student-name"><a href="/students/n01370825">Joseph Lao</a></h1>
                     <h2 class="student-position">Software Engineer</h2>
                 </article>
                 
                 <article class="student-basic">
-                    <a href="/studentProfile" data-route="/studentProfile"><img src="/img/inna_pro_pic.jpg" alt="professional image" class="student-image"></a>
-                    <a href="/studentProfile" data-route="/studentProfile"><h1 class="student-name">Inna Manova</h1></a>
+                    <img src="/img/inna_pro_pic.jpg" alt="professional image" class="student-image">
+                    <h1 class="student-name"><a href="/students/n01384347">Inna Manova</a></h1>                    
                     <h2 class="student-position">Web Designer</h2>
                 </article>
 
                 <article class="student-basic">
-                    <a href="/studentProfile" data-route="/studentProfile"><img src="/img/bijay_pro_pic.png" alt="professional image" class="student-image"></a>
-                    <a href="/studentProfile" data-route="/studentProfile"><h1 class="student-name">Bijay Karki</h1></a>
+                    <img src="/img/bijay_pro_pic.png" alt="professional image" class="student-image">
+                    <h1 class="student-name"><a href="/students/n01271571">Bijay Karki</a></h1>
                     <h2 class="student-position">Application Engineer</h2>
                 </article>
             </section>

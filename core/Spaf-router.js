@@ -30,21 +30,20 @@ export const init = (rootElm, routeHash) => {
 
   //listen to navigation history event
   window.addEventListener("popstate", e => {
-    console.log(routeHash, )
-    const path = window.location.pathname.replace(/^\/+/g, '').split('/');
-    let route = `/${path[0]}`;
-    if(path.length > 1) {
-      route = route + '/:param'
-    }
     goToPage(rootElm, routeHash[route], path[1]);
   });
 };
 
 export default (rootElem, routes) => {
   const routeHash = getRoutesObject(routes);
-  init(rootElem, routeHash);
+  const path = window.location.pathname.replace(/^\/+/g, '').split('/');
+    let route = `/${path[0]}`;
+    if(path.length > 1) {
+      route = route + '/:param'
+    }
 
-  return routeHash[window.location.pathname]
-    ? routeHash[window.location.pathname]
-    : routeHash["/404"];
+  init(rootElem, routeHash);
+  return routeHash[route]
+    ? routeHash[route](path[1])
+    : routeHash["/404"]();
 };
