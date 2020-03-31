@@ -7,64 +7,109 @@ const HomePage = () => {
     <main role="main" class="home">
       <section class="hero">
         <div class="hero-banner">
-          <h1 class="hero-text">Humber Media Pros</h1>
+          <h1 class="hero-text">GMBDragon</h1>
         </div>
       </section>
+
+
       <section class="programs">
-        <h2 class="main-text">School of Media Studies</h2>
-        <p class="sub-text">
-          We offer the most comprehensive mix of Media, Arts & Communications
-          programming of any college in Canada. Our Live Labs and
-          work-integrated learning opportunities provide a layer of experience
-          that complements the critical storytelling skills taught across
-          multiple platforms. We leverage this multi-disciplinary power to
-          create highly-skilled, adaptable and resourceful professionals that
-          are career-ready.
-        </p>
+        <h2 class="main-text">What we do</h2>
+            <p class="sub-text">
+            GMBDragon is a Digital Marketing Agency focused on delivering Google My Business search results optimization (i.e., getting into the 3 results for local businesses which always shows at the top of the organic local search result page).
+            </p>
         <div class="program-grid">
+
+
           <div class="program-item">
-            <img src="/img/web-dev.png" alt="Web Design and Development" />
+            <img src="/img/location.jpg" alt="Location Verification" />
             <div class="program-content">
-              <h3 class="program-name">Web Design and Development</h3>
-              <p class="program-brief">
-                If you describe yourself as creative, resourceful,
-                detail-oriented and a problem solver, then Humber's Web Design
-                and Development certificate program is for you.
-              </p>
+              <h3 class="program-name">Location Verification</h3>
+                <p class="program-brief">
+                If you have multiple locations, open the location you'd like to manage. ... Drag the pin to your business location, using the + and - buttons...
+                </p>
               <button class="btn learn-more">Learn More</button>
             </div>
           </div>
+
+
           <div class="program-item">
-            <img
-              src="/img/graphics-desgin.png"
-              alt="Graphic Design for Print and Web"
-            />
-            <div class="program-content">
-              <h3 class="program-name">Graphic Design for Print and Web</h3>
+          <img src="/img/listing.jpg" alt="Listing Optimization" />
+          <div class="program-content">
+            <h3 class="program-name">Listing Optimization</h3>
               <p class="program-brief">
-                Motivated. Creative. Innovative. If these words describe you,
-                then our intensive Graphic Design for Print and Web certificate
-                program is for you.
+              Listing optimization is the process of upgrading product pages to improve their search visibility, click-through rate (CTR) ... </p>
               </p>
-              <button class="btn learn-more">Learn More</button>
-            </div>
-          </div>
-          <div class="program-item">
-            <img
-              src="/img/3dmodeling.png"
-              alt="3D Modelling and Visual Effects"
-            />
-            <div class="program-content">
-              <h3 class="program-name">3D Modelling and Visual Effects</h3>
-              <p class="program-brief">
-                Humber's 3D Modelling and Visual Effects Production certificate
-                program focuses on both the conceptual and the technical, as you
-                learn to master visual techniques to bring ideas to life.
-              </p>
-              <button class="btn learn-more">Learn More</button>
-            </div>
+            <button class="btn learn-more">Learn More</button>
           </div>
         </div>
+
+
+          <div class="program-item">
+            <img src="/img/photographer.jpg" alt="Photo Optimization"/>
+            <div class="program-content">
+              <h3 class="program-name">Photo Optimization</h3>
+              <p class="program-brief">
+              It's about image SEO. That is, getting your product images and decorative images to rank     ...           </p>
+              <button class="btn learn-more">Learn More</button>
+            </div>
+          </div>
+
+          <div class="program-item">
+            <img src="/img/cititions.jpg" alt="Citations and Backlink packages"/>
+            <div class="program-content">
+              <h3 class="program-name">Citations and Backlink packages </h3>
+              <p class="program-brief">
+              Backlinks for Local SEO. Similar to citations, backlinks are off-site signals that Google use to assess ...  </p>
+              <button class="btn learn-more">Learn More</button>
+            </div>
+          </div>
+
+          <div class="program-item">
+          <img src="/img/reviews.jpg" alt="Customer reviews generation"/>
+          <div class="program-content">
+            <h3 class="program-name">Customer reviews generation</h3>
+            <p class="program-brief">
+            Backlinks for Local SEO. Similar to citations, backlinks are off-site signals that Google use ...              </p>
+            <button class="btn learn-more">Learn More</button>
+          </div>
+        </div>
+
+        <div class="program-item">
+        <img src="/img/reviews.jpg" alt="Citations and Backlink packages"/>
+        <div class="program-content">
+          <h3 class="program-name">Citations and Backlink packages (</h3>
+          <p class="program-brief">
+          Backlinks for Local SEO. Similar to citations, backlinks are off-site signals that Google use ...              </p>
+          <button class="btn learn-more">Learn More</button>
+        </div>
+      </div>
+
+
+      <div class="program-item">
+      <img src="/img/cititions.jpg" alt="Citations and Backlink packages"/>
+      <div class="program-content">
+        <h3 class="program-name">Citations and Backlink packages (</h3>
+        <p class="program-brief">
+        Backlinks for Local SEO. Similar to citations, backlinks are off-site signals that Google use ...              </p>
+        <button class="btn learn-more">Learn More</button>
+      </div>
+    </div>
+
+    <div class="program-item">
+      <img src="/img/cititions.jpg" alt="Citations and Backlink packages"/>
+      <div class="program-content">
+        <h3 class="program-name">Citations and Backlink packages (</h3>
+        <p class="program-brief">
+        Backlinks for Local SEO. Similar to citations, backlinks are off-site signals that Google use ...              </p>
+        <button class="btn learn-more">Learn More</button>
+      </div>
+    </div>
+ </div>
+
+
+
+
+
       </section>
       <section class="students-work">
         <h2 class="main-text">OUR STUDENTS WORK</h2>
