@@ -24,11 +24,10 @@ const HomePage = () => {
             <img src="/img/location.jpg" alt="Location Verification" />
             <div class="program-content">
               <h3 class="program-name">Location Verification</h3>
-             
                 <p class="program-brief">
                 If you have multiple locations, open the location you'd like to manage. ... Drag the pin to your business location, using the + and - buttons...
                 </p>
-              <button class="btn learn-more">Learn More</button>
+              <a href="/serviceLocations" class="btn learn-more">Learn More</a>
             </div>
           </div>
 
@@ -40,7 +39,7 @@ const HomePage = () => {
               <p class="program-brief">
               Listing optimization is the process of upgrading product pages to improve their search visibility, click-through rate (CTR) ... </p>
               </p>
-            <button class="btn learn-more">Learn More</button>
+              <a href="/serviceListings" class="btn learn-more">Learn More</a>
           </div>
         </div>
 
@@ -106,39 +105,21 @@ const HomePage = () => {
       </div>
     </div>
  </div>
+</section>
 
+<section class="about-home">
+<span class="about-home-title">ABOUT US</span>
+</br>
+<span>
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
+  voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
+  fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
+  necessitatibus totam!
+</span>
 
-
-
-
-      </section>
-      <section class="students-work">
-        <h2 class="main-text">OUR STUDENTS WORK</h2>
-        <p class="sub-text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
-          voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
-          fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
-          necessitatibus totam!
-        </p>
-        <ul class="work-grid">
-          <li><img src="/img/studentwork1.png" alt="students work img" /></li>
-          <li><img src="/img/studentwork2.png" alt="students work img" /></li>
-          <li><img src="/img/studentwork3.png" alt="students work img" /></li>
-        </ul>
-      </section>
-      <section class="news-events">
-        <h2 class="main-text">NEWS AND EVENTS</h2>
-        <p class="sub-text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
-          voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
-          fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
-          necessitatibus totam!
-        </p>
-        <div class="hero-banner events-banner">
-          <button class="btn learn-more events">Learn More</button>
-        </div>
-      </section>
+</section>
     </main>
+
   `;
 };
 

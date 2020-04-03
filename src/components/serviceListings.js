@@ -1,12 +1,12 @@
 import { html } from "../../core/Spaf.js";
 
-const serviceLocations = () => {
+const serviceListings = () => {
 
     return html`
   <main role="main" class="home">
   <section class="hero">
-    <div class="program-banner">
-      <h1 class="hero-text">Location Verification Services</h1> <br>
+    <div class="program-banner-2">
+      <h1 class="hero-text">Listing Optimization Services</h1> <br>
     </div>
   </section>
     
@@ -24,7 +24,7 @@ const serviceLocations = () => {
 
     <section class="program-home">
       <article>
-            <h2 class="main-text">What are location verification services ?</h2>
+            <h2 class="main-text">What are Listing Optimization services ?</h2>
               <p>
                     some content
               </p>
@@ -45,4 +45,4 @@ const serviceLocations = () => {
   `;
 };
 
-export default serviceLocations;
+export default serviceListings;

@@ -5,6 +5,7 @@ import Students from "../components/students.js";
 import StudentProfile from "../components/studentProfile.js";
 import NotFound404 from "../components/404.js";
 import ServiceLocations from "../components/serviceLocations.js";
+import ServiceListings from "../components/serviceListings.js";
 
 const routes = [
   { route: "/", component: Home, default: true },
@@ -12,7 +13,8 @@ const routes = [
   { route: "/students", component: Students },
   { route: "/students/:param", component: StudentProfile },
   { route: "/404", component: NotFound404 },
-  { route: "/serviceLocations", component: ServiceLocations }
+  { route: "/serviceLocations", component: ServiceLocations },
+  { route: "/serviceListings", component: ServiceListings }
 ];
 
 export default rootElement => Router(rootElement, routes);

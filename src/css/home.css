@@ -128,7 +128,15 @@ body {
 }
 
 .program-banner {
-  background-image: url("/img/program.png");
+  background-image: url("/img/location.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  box-sizing: border-box;
+}
+.program-banner-2 {
+  background-image: url("/img/listing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -137,8 +145,11 @@ body {
 }
 .program-info-nav{
 display:grid;
-grid-template-columns: repeat(7, 1fr);
+grid-template-columns: repeat(8, 1fr);
 }
+.program-info-nav a{
+  text-decoration:none;
+  }
 
 .program-button{
   width: 14em;
@@ -192,41 +203,33 @@ grid-template-columns: repeat(7, 1fr);
 .class-button a{
   text-decoration: none;
 }
-.success-stories{
-  display:grid;
-  grid-template-columns: 20em  auto;
-  border: 1px solid black;
+
+.about{
+  background-color: #453f3f;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
 }
 
-.student-program{
-  padding-top: 2em;
-  border-right: 1px solid black;;
-}
-
-.student-program img{
+.about-home {
   display: block;
-  border-radius: 50%;
-  max-width: 50%;
-  margin: 0.5em auto;
-}
+  width: 100%;
+  min-height:  16em;
+  border: none;
+  background-color: #453f3f;
+  color: white;
+  font-size: 16px;
+  margin:4em;
+  padding:4em
 
-.student-program a{
-  text-decoration: none;
 }
-
-.success-graduation{
-  color: var(--primaryThemeColor-light);
-  font-weight: bold;
-  padding: 1em;
-}
-.success-content{
-  padding: 1em;
-}
-
-.profession-grid{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin:1em;
+.about-home-title{
+font-weight: bold;
+font-size: 30px;
+text-transform: uppercase;
+margin: 0.25em 0;
+color:white
 }
 /* mobile responsiveness */
 @media screen and (max-width: 768px) {
