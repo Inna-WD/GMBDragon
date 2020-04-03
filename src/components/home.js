@@ -7,7 +7,10 @@ const HomePage = () => {
     <main role="main" class="home">
       <section class="hero">
         <div class="hero-banner">
-          <h1 class="hero-text">GMBDragon</h1>
+        
+          <h1 class="hero-text">
+           <img src="/img/logo_150.png" alt="GMBDragon">
+            GMBDragon</h1>
         </div>
       </section>
 
@@ -15,7 +18,16 @@ const HomePage = () => {
       <section class="programs">
         <h2 class="main-text">What we do</h2>
             <p class="sub-text">
-            GMBDragon is a Digital Marketing Agency focused on delivering Google My Business search results optimization (i.e., getting into the 3 results for local businesses which always shows at the top of the organic local search result page).
+            GMBDragon is a Digital Marketing Agency focused on delivering Google My Business search results optimization (i.e., getting into the 3 results for local businesses which always shows at the top of the organic local search result page).  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
+            voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
+            fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
+            necessitatibus totam!  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
+            voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
+            fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
+            necessitatibus totam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
+            voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
+            fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
+            necessitatibus totam!  Lorem ipsum, dolor
             </p>
         <div class="program-grid">
 
@@ -50,7 +62,7 @@ const HomePage = () => {
               <h3 class="program-name">Photo Optimization</h3>
               <p class="program-brief">
               It's about image SEO. That is, getting your product images and decorative images to rank     ...           </p>
-              <button class="btn learn-more">Learn More</button>
+              <a href="/servicePhotos" class="btn learn-more">Learn More</a>
             </div>
           </div>
 
@@ -60,7 +72,7 @@ const HomePage = () => {
               <h3 class="program-name">Citations and Backlink packages </h3>
               <p class="program-brief">
               Backlinks for Local SEO. Similar to citations, backlinks are off-site signals that Google use to assess ...  </p>
-              <button class="btn learn-more">Learn More</button>
+              <a href="/serviceCitations" class="btn learn-more">Learn More</a>
             </div>
           </div>
 
@@ -70,7 +82,7 @@ const HomePage = () => {
             <h3 class="program-name">Customer reviews generation</h3>
             <p class="program-brief">
             Backlinks for Local SEO. Similar to citations, backlinks are off-site signals that Google use ...              </p>
-            <button class="btn learn-more">Learn More</button>
+            <a href="/serviceReviews" class="btn learn-more">Learn More</a>
           </div>
         </div>
 
@@ -80,8 +92,8 @@ const HomePage = () => {
           <h3 class="program-name">Listing content creation</h3>
           <p class="program-brief">
           Backlinks for Local SEO. Similar to citations, backlinks are off-site signals that Google use ...              </p>
-          <button class="btn learn-more">Learn More</button>
-        </div>
+          <a href="/serviceContent" class="btn learn-more">Learn More</a>
+                  </div>
       </div>
 
 
@@ -91,7 +103,7 @@ const HomePage = () => {
         <h3 class="program-name">Trusted Google photographer</h3>
         <p class="program-brief">
         Backlinks for Local SEO. Similar to citations, backlinks are off-site signals that Google use ...              </p>
-        <button class="btn learn-more">Learn More</button>
+        <a href="/servicePhotographer" class="btn learn-more">Learn More</a>
       </div>
     </div>
 
@@ -101,20 +113,48 @@ const HomePage = () => {
         <h3 class="program-name">Keyword Research and SEO</h3>
         <p class="program-brief">
         Backlinks for Local SEO. Similar to citations, backlinks are off-site signals that Google use ...              </p>
-        <button class="btn learn-more">Learn More</button>
-      </div>
+        <a href="/serviceSEO" class="btn learn-more">Learn More</a>      
+        </div>
     </div>
  </div>
 </section>
 
-<section class="hero-banner">
+<section class="about-banner">
 <span class="about-home-title">ABOUT US</span>
 </br>
-<span>
+<span class="about-text">
+<div></div>
+<div>
   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
   voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
   fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
   necessitatibus totam!
+  <br>
+  <br>
+
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
+  voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
+  fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
+  necessitatibus totam!  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
+  voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
+  fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
+  necessitatibus totam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
+  voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
+  fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
+  necessitatibus totam!  Lorem ipsum, dolor
+  <br>
+  <br>
+  
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
+  voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
+  fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
+  necessitatibus totam!  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
+  voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
+  fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
+  necessitatibus totam!
+  </div>
+  </div>
+  </div>
 </span>
 </section>
 </main>

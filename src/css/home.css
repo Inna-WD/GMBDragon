@@ -16,7 +16,7 @@ body {
 }
 
 .home .hero-banner {
-  background-image: url("/img/home-hero-banner1.png");
+  background-image: url("/img/home-hero-banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -47,6 +47,7 @@ body {
   font-size: 30px;
   text-transform: uppercase;
   margin: 0.25em 0;
+  text-align: center;
 }
 
 .home .program-grid {
@@ -123,6 +124,7 @@ body {
   background-position: center;
   min-height: 50vh;
   box-sizing: border-box;
+  text-align: center;
 }
 .program-banner-2 {
   background-image: url("/img/listing.jpg");
@@ -131,10 +133,65 @@ body {
   background-position: center;
   min-height: 50vh;
   box-sizing: border-box;
+  text-align: center;
+}
+.program-banner-3 {
+  background-image: url("/img/photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  box-sizing: border-box;
+  text-align: center;
+}
+.program-banner-4 {
+  background-image: url("/img/cititions.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  box-sizing: border-box;
+  text-align: center;
+}
+.program-banner-5 {
+  background-image: url("/img/reviews.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  box-sizing: border-box;
+  text-align: center;
 }
 .program-info-nav{
 display:grid;
 grid-template-columns: repeat(8, 1fr);
+}
+.program-banner-6 {
+  background-image: url("/img/content.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  box-sizing: border-box;
+  text-align: center;
+}
+.program-banner-7 {
+  background-image: url("/img/photographer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  box-sizing: border-box;
+  text-align: center;
+}
+.program-banner-8 {
+  background-image: url("/img/seo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  box-sizing: border-box;
+text-align: center;
 }
 .program-info-nav a{
   text-decoration:none;
@@ -211,9 +268,43 @@ text-transform: uppercase;
 margin: 0.25em 0;
 color:white;
 text-align: center;
-text-shadow: 2px 2px 2px #000000;
-
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.about-banner {
+  background-image: url("/img/home-hero-banner3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  box-sizing: border-box;
+}
+.about-text {
+  display:grid;
+  grid-template-columns: 20em auto;
+  margin:0 3em;
+}
+
+.contact-banner {
+  background-color:#453f3f;
+  opacity: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 30vh;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+}
+.contact-title{
+  font-weight: bold;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin: 0.25em 0;
+  color:white;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+  }
 /* mobile responsiveness */
 @media screen and (max-width: 768px) {
   .home .program-grid {

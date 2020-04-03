@@ -6,6 +6,12 @@ import StudentProfile from "../components/studentProfile.js";
 import NotFound404 from "../components/404.js";
 import ServiceLocations from "../components/serviceLocations.js";
 import ServiceListings from "../components/serviceListings.js";
+import ServicePhotos from "../components/servicePhotos.js";
+import ServiceCitations from "../components/serviceCitations.js";
+import ServiceReviews from "../components/serviceReviews.js";
+import ServiceContent from "../components/serviceContent.js";
+import ServicePhotographer from "../components/servicePhotographer.js";
+import ServiceSEO from "../components/serviceSEO.js";
 
 const routes = [
   { route: "/", component: Home, default: true },
@@ -14,7 +20,13 @@ const routes = [
   { route: "/students/:param", component: StudentProfile },
   { route: "/404", component: NotFound404 },
   { route: "/serviceLocations", component: ServiceLocations },
-  { route: "/serviceListings", component: ServiceListings }
+  { route: "/serviceListings", component: ServiceListings },
+  { route: "/servicePhotos", component: ServicePhotos },
+  { route: "/serviceCitations", component: ServiceCitations },
+  { route: "/serviceReviews", component: ServiceReviews },
+  { route: "/serviceContent", component: ServiceContent },
+  { route: "/servicePhotographer", component: ServicePhotographer },
+  { route: "/serviceSEO", component: ServiceSEO },
 ];
 
 export default rootElement => Router(rootElement, routes);
