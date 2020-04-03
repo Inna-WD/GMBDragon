@@ -24,6 +24,7 @@ const HomePage = () => {
             <img src="/img/location.jpg" alt="Location Verification" />
             <div class="program-content">
               <h3 class="program-name">Location Verification</h3>
+             
                 <p class="program-brief">
                 If you have multiple locations, open the location you'd like to manage. ... Drag the pin to your business location, using the + and - buttons...
                 </p>
@@ -45,7 +46,7 @@ const HomePage = () => {
 
 
           <div class="program-item">
-            <img src="/img/photographer.jpg" alt="Photo Optimization"/>
+            <img src="/img/photo.jpg" alt="Photo Optimization"/>
             <div class="program-content">
               <h3 class="program-name">Photo Optimization</h3>
               <p class="program-brief">
@@ -75,9 +76,9 @@ const HomePage = () => {
         </div>
 
         <div class="program-item">
-        <img src="/img/reviews.jpg" alt="Citations and Backlink packages"/>
+        <img src="/img/content.jpg" alt="Listing content creation"/>
         <div class="program-content">
-          <h3 class="program-name">Citations and Backlink packages (</h3>
+          <h3 class="program-name">Listing content creation</h3>
           <p class="program-brief">
           Backlinks for Local SEO. Similar to citations, backlinks are off-site signals that Google use ...              </p>
           <button class="btn learn-more">Learn More</button>
@@ -86,9 +87,9 @@ const HomePage = () => {
 
 
       <div class="program-item">
-      <img src="/img/cititions.jpg" alt="Citations and Backlink packages"/>
+      <img src="/img/photographer.jpg" alt="Trusted Google photographer"/>
       <div class="program-content">
-        <h3 class="program-name">Citations and Backlink packages (</h3>
+        <h3 class="program-name">Trusted Google photographer</h3>
         <p class="program-brief">
         Backlinks for Local SEO. Similar to citations, backlinks are off-site signals that Google use ...              </p>
         <button class="btn learn-more">Learn More</button>
@@ -96,9 +97,9 @@ const HomePage = () => {
     </div>
 
     <div class="program-item">
-      <img src="/img/cititions.jpg" alt="Citations and Backlink packages"/>
+      <img src="/img/seo.jpg" alt="Keyword Research and SEO"/>
       <div class="program-content">
-        <h3 class="program-name">Citations and Backlink packages (</h3>
+        <h3 class="program-name">Keyword Research and SEO</h3>
         <p class="program-brief">
         Backlinks for Local SEO. Similar to citations, backlinks are off-site signals that Google use ...              </p>
         <button class="btn learn-more">Learn More</button>

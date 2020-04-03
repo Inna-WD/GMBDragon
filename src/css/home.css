@@ -75,6 +75,10 @@ body {
 .home .program-name {
   font-size: 1.375em;
   margin: 0.25em 0;
+  text-align: center;
+  color:  #684309;
+  font-weight: bolder;
+
 }
 
 .home .btn.learn-more {
