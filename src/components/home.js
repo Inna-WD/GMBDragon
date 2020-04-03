@@ -157,6 +157,64 @@ const HomePage = () => {
   </div>
 </span>
 </section>
+
+<section>
+<div class="price-grid">
+  <div class="program-item">
+    <img src="/img/1.png" alt="Basic Optimization package " />
+    <div class="price-content">
+      <h3 class="program-name">Basic Optimization package </h3>
+        <p class="program-brief">
+        Self-service: <br> A free 3-5-minute assessment of the client situation will be provided by GMBDragon.
+        This is online tutorial for the business owners to perform self-check of the current business status and make simple do-it-yourself steps to improve their visibility.
+                </p>
+    </div>
+  </div>
+
+
+  <div class="program-item">
+  <img src="/img/2.png" alt="Basic Optimization package " />
+  <div class="price-content">
+    <h3 class="program-name">Basic Optimization package </h3>
+      <p class="program-brief">
+      Managed Service: <br>Basic Optimization Package, but outsourced to GMBDragon rather than self serve      </p>
+  </div>
+</div>
+
+
+  <div class="program-item">
+    <img src="/img/3.png" alt="Advanced Optimization Package"/>
+    <div class="price-content">
+      <h3 class="program-name">Advanced Optimization Package</h3>
+      <p class="program-brief">
+Basic optimization sevice +Content creation (Google Trusted Photographer images for GMB listing, website articles, video content), Review campaign with present and past customers,  White-hat backlinks     </div>
+  </div>
+
+  <div class="program-item">
+    <img src="/img/4.png" alt="Maintenance Package"/>
+    <div class="price-content">
+      <h3 class="program-name">Maintenance Package</h3>
+      <p class="program-brief">
+      For customers which finish the 3 month subscription, a low cost monthly maintenance to help keep the listing high:
+      Content (2-3 image, 1article) creation, Citations (25 per month), Backlinks (1-5 per month), Review campaign
+          </div>
+  </div>
+
+  <div class="program-item">
+    <img src="/img/5.png" alt="Customized package"/>
+    <div class="price-content">
+      <h3 class="program-name">Customized package</h3>
+      <p class="program-brief">
+      Customized package could include all or any combination of the following: web site redesign, content creation, location verification, listing and photo optimization, keyword research and SEO    </div>
+  </div>
+
+
+
+
+</div>
+</section>
+
+
 </main>
 
   `;

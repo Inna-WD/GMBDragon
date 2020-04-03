@@ -305,6 +305,34 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
   }
+  .contact-icon{
+    height: auto;
+    max-height: 3em;
+  }
+  .field{
+    height: 2em;
+    width: 30em;
+  }
+  .field-text{
+    margin: 0 0 0 3em;
+    min-height: 10em;
+    width: 30em;
+  }
+  .price-content {
+    padding: 1em;
+    display: grid;
+    grid-template-rows: auto minmax(auto, 20em) auto;
+  }
+  
+  .program-item :hover{
+  background-color: #f9d677;
+  }
+.price-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 1.5em 0;
+    gap: 1em;
+  }
 /* mobile responsiveness */
 @media screen and (max-width: 768px) {
   .home .program-grid {
