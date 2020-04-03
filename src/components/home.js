@@ -107,7 +107,7 @@ const HomePage = () => {
  </div>
 </section>
 
-<section class="about-home">
+<section class="hero-banner">
 <span class="about-home-title">ABOUT US</span>
 </br>
 <span>
@@ -116,9 +116,8 @@ const HomePage = () => {
   fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
   necessitatibus totam!
 </span>
-
 </section>
-    </main>
+</main>
 
   `;
 };

@@ -119,7 +119,6 @@ body {
 /* CSS for header ends */
 
 /* CSS for main content */
-/* css for students page */
 label.program-choice {
   cursor: pointer;
 }
@@ -165,91 +164,7 @@ label.program-choice input:checked + span {
   grid-area: jobPosition;
 }
 
-.sort-name{
-  grid-area: studentName;
-}
 
-.students-headshot{
-  display: grid;
-  justify-content: center;
-}
-
-.student-name{
-  color: var(--primaryThemeColor);
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.3rem;
-  letter-spacing: 0.15rem;
-}
-
-.student-position{
-  color: var(--primaryThemeColor-neutral);
-  text-align: center;
-  font-weight: lighter;
-  font-size: 1rem;
-}
-
-.student-basic{
-  padding-top: 2em;
-}
-
-.student-basic img{
-  display: block;
-  border-radius: 50%;
-  max-width: 50%;
-  margin: 0.5em auto;
-}
-
-.student-basic a{
-  text-decoration: none;
-}
-
-/* css for student personal page */
-.class-of{
-  display: grid;
-  justify-items: center;   
-  margin: 0.5em; 
-}
-
-.graduation{
-  color: var(--primaryThemeColor-light);
-  font-weight: bold;
-  font-size: 1.2rem;
-  padding-top: 0.5em;
-}
-
-.personal-basic img{
-  display: block;
-  border-radius: 50%;
-  max-width: 40%;
-  margin: 0.5em auto;
-}
-
-.full-name{
-  color: var(--primaryThemeColor);
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-  font-size: 2rem;
-  letter-spacing: 0.15rem;
-}
-
-.professional-position{
-  color: var(--primaryThemeColor-neutral);
-  text-align: center;
-  font-weight: lighter;
-  font-size: 1.5rem;
-}
-
-.personal-contact{
-  display: grid;
-  grid-template-columns: 3em 1em auto;
-}
-
-.personal-contact i{
-  text-align: center;
-}
 
 .vertical-line { 
   border-left: 1px solid var(--primaryThemeColor-light);
@@ -272,11 +187,6 @@ label.program-choice input:checked + span {
   margin-bottom: 0.5rem;
 }
 
-.group-title{
-  color: var(--primaryThemeColor);
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-}
 
 .paragraph-content{
   line-height: 1.6rem;
@@ -292,43 +202,7 @@ label.program-choice input:checked + span {
   color: var(--primaryThemeColor-neutral);  
 }
 
-.personal-social-media{
-  display: grid;
-  grid-template-columns: 2em 2em 2em 2em 2em;
-  padding: 0.5em;
-  font-size: 2em;
-}
 
-.personal-social-media a{
-  color: var(--defaultColor);
-  text-decoration: none;
-}
-
-.personal-social-media a:hover 
-{
-  color: var(--primaryThemeColor-light);  
-}
-
-.job-position{
-  color: var(--primaryThemeColor-neutral);
-  text-transform: uppercase;
-  font-weight: lighter;
-  font-size: 1em;
-  margin-top: 1rem; 
-}
-
-.company-name{
-  color: var(--primaryThemeColor-neutral);
-  font-weight: bolder;
-  font-size: 1em;
-  margin-top: 0.3rem; 
-  margin-bottom: 0.5rem;
-}
-
-.title-icon{
-  display: grid;
-  grid-template-columns: 2em auto;
-}
 
 /* css for footer starts here */
 .footer {

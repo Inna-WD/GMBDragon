@@ -16,7 +16,7 @@ body {
 }
 
 .home .hero-banner {
-  background-image: url("/img/home-hero-banner.png");
+  background-image: url("/img/home-hero-banner1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -101,16 +101,6 @@ body {
   width: 100%;
 }
 
-.home .events-banner {
-  background-image: url("/img/news-events-banner.png");
-  min-height: 50vh;
-  margin: 1em 0;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .home .btn.events {
   background-color: #014b77;
@@ -122,7 +112,6 @@ body {
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
-/* Design of the program page */
 .program-home {
   margin:1em;
 }
@@ -165,16 +154,7 @@ grid-template-columns: repeat(8, 1fr);
   background-color:#967136;
   }
 
-.program-page-two-columns-structure{
-    display: grid;
-    grid-template-columns: 20em  auto;
-    grid-template-areas:  "intro";
-    padding-top: 1em;
-    text-align: justify;
-  }
-.program-page-left-panel{
-  grid-area: intro;
-}
+
 
 .font-bold{
   font-weight: bold;
@@ -226,10 +206,13 @@ grid-template-columns: repeat(8, 1fr);
 }
 .about-home-title{
 font-weight: bold;
-font-size: 30px;
+font-size: 3em;
 text-transform: uppercase;
 margin: 0.25em 0;
-color:white
+color:white;
+text-align: center;
+text-shadow: 2px 2px 2px #000000;
+
 }
 /* mobile responsiveness */
 @media screen and (max-width: 768px) {
