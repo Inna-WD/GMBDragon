@@ -36,15 +36,14 @@ ul.b {
               Content creation is the ultimate inbound marketing practice. When you create content, you’re providing free and useful information to your audience, attracting potential customers to your website, and retaining existing customers through quality engagement. Content marketing stats demonstrate:             </p>
               </article>
 <ul class="b">
-  <li> Content marketing brings in 3X as many leads as traditional marketing and costs 62% less </li>
-  <li> Small businesses that use content marketing get 126% more leads than those that don’t </li>
-  <li> 61% of online purchases are the direct result of a customer reading a blog.</li>
-  <li>Companies that publish 16+ blog posts per month get 3.5X more traffic than those that post four or fewer posts per month. </li>
+  <li> It is estimated that content marketing brings 3x as many leads as traditional marketing and costs much less </li>
+  <li> Small businesses that use content marketing get more leads than those that don’t </li>
+  <li> More  than half of online purchases are the direct result of a customer reading a blog.</li>
   
 </ul>
 <br>
 <br>
-Excellent content and content strategy equal business growth. <br>
+Excellent content and content strategy bring business growth. <br>
 <br>
     </section>
 

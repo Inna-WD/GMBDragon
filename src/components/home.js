@@ -117,7 +117,7 @@ const HomePage = () => {
 <div><span class="about-home-title">ABOUT US</span></div>
 <div>
 We are a team of two professionals who are super passionate about digital possibilities for small businesses. We believe that digital presence makes a huge 
-diffrence and could be learnt or... improved just a bit. We are here to help you out!
+diffrence and could be learnt by the business owner or... we can improve it. We are here to help you out!
   <br>
   <br>
 

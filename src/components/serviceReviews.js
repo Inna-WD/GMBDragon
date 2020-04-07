@@ -32,7 +32,8 @@ ul.b {
       <article>
             <h2 class="main-text">What is Customers' Reviews Generation ?</h2>
               <p>
-              Review generation is the process of getting more customer reviews on your business locations’ online review pages, on sites like Google, Facebook, Yelp, and TripAdvisor, among others. This can be done by:
+              Review generation is the process of getting more customer reviews on your business locations’ online review pages, 
+              on sites like Google, Facebook, Yelp, and TripAdvisor, among others. This can be done by:
               </p>
               </article>
 <ul class="b">
@@ -44,10 +45,14 @@ ul.b {
 </ul>
 <br>
 <br>
-Reviews help improve and maintain a positive brand reputation. Reviews also help you rank well in local SEO searches. And reviews are an important research tool for consumers: by providing customers with more reviews (and hopefully more positive reviews) on your profiles, you give them more reason to choose your business when they’re doing their research.  
+Reviews help improve and maintain a positive brand reputation. Reviews also help you rank well in local SEO searches. 
+And reviews are an important research tool for consumers: by providing customers with more reviews (and hopefully more positive reviews) 
+on your profiles, you give them more reason to choose your business when they’re doing their research.  
 <br>
 <br>
-In addition to SEO, brand reputation, and research, reviews help businesses understand their customers. That’s a big deal. The more reviews you have, the more feedback you have. If you take customer experience seriously, you need to listen to your customers—and reviews help you do just that.
+In addition to SEO, brand reputation, and research, reviews help businesses understand their customers. That’s a big deal. 
+The more reviews you have, the more feedback you have. If you take customer experience seriously, you need to listen to your 
+customers—and reviews help you do just that.
     </section>
 
 

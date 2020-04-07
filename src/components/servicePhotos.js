@@ -20,27 +20,46 @@ const servicePhotos = () => {
   <div><a href="/servicePhotographer" data-route="/servicePhotographer"><h1 class="program-button">GOOGLE PHOTOGRAPHER</h1></a></div>
   <div><a href="/serviceSEO" data-route="/serviceSEO"><h1 class="program-button">KEYWORD RESEARCH and SEO</h1></a></div>
 </nav>
-
+<style>
+ul.b { 
+  list-style-type: square;
+  list-style-position: inside;
+ 
+}
+</style>
     <section class="program-home">
       <article>
             <h2 class="main-text">What are Photo Optimization services ?</h2>
-            Image optimization is the process of editing your web page images in order to increase the overall speed and visibility of your website. Image optimization falls under on-page SEO and deals with optimizing image size, alt tags, and file types to be more SEO-friendly.
+            Image optimization is the process of editing web page images in order to increase the overall speed and 
+            visibility of the website. Image optimization falls under on-page SEO and deals with optimizing image size, 
+            alt tags, and file types to be more SEO-friendly.
             <br>
             <br>
-            Having images on website makes your web pages more appealing to the human eye and are an important part to any websites design.
-Images can help to tell your brands story and better explain a message that you’re trying to convey to your audience.
+            Having images on website makes web pages more appealing to the human eye and are an important part to any 
+            websites design.
             
             <br>
             <br>
-            Optimized images do more than just look appealing and can not only increase your websites load time, but also rank on search engines and increase your websites visibility.
+            Optimized images do more than just look appealing and can not only increase your websites load time, 
+            but also rank on search engines and increase your websites visibility.
 <br>
 <br>
-Optimizing your images has 2 main benefits:
+Optimizing your images has two main benefits:
 <br>
-*** Faster page load time: With properly optimized images, users won’t be turned away by slow loading pages and be more inclined to stay on your website.
+
+<ul class="b">
+  <li> Faster page load time: With properly optimized images, users won’t be turned away by slow loading pages 
+
+  </li>
+  <li> Increased website visibility: It can also help to improve the overall ranking of your various web pages. 
+ 
+  The faster the page loads, the higher it could rank on search engines.
+  </li>
+  
+</ul>
+
+
 <br>
-<br>
-*** Increased website visibility: Not only can editing  tags allow your product or decorative images to appear on image search results, but can also help to improve the overall ranking of your various web pages. Search engines consider page load speed as an essential parameter for user engagement, making it a key page ranking factor. The faster the page loads, the higher it could rank on search engines.
 
 
 </article>
@@ -51,3 +70,9 @@ Optimizing your images has 2 main benefits:
 };
 
 export default servicePhotos;
+
+
+
+
+
+

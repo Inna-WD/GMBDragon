@@ -12,6 +12,10 @@ import ServiceReviews from "../components/serviceReviews.js";
 import ServiceContent from "../components/serviceContent.js";
 import ServicePhotographer from "../components/servicePhotographer.js";
 import ServiceSEO from "../components/serviceSEO.js";
+import contactUs from "../components/contactUs.js";
+
+
+
 
 const routes = [
   { route: "/", component: Home, default: true },
@@ -27,6 +31,8 @@ const routes = [
   { route: "/serviceContent", component: ServiceContent },
   { route: "/servicePhotographer", component: ServicePhotographer },
   { route: "/serviceSEO", component: ServiceSEO },
+  { route: "/contactUs", component: contactUs },
+
 ];
 
 export default rootElement => Router(rootElement, routes);

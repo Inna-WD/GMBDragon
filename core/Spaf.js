@@ -1,7 +1,5 @@
 /**
- * Spaf  = Single Page Application Framework
- * DO NOT DIRECTLY ACCESS ALL CAPS PROPERTIES
- * TODO more documentation
+
  */
 
 /**
