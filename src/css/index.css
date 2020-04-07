@@ -408,20 +408,8 @@ label.program-choice input:checked + span {
     padding: 0 1em;
   }
 
-  /* media queries for footer -end */
+ 
 
-  /* media queries for header- end */
-
-  /* breakpoint for students page */
-  .student-program-choice{
-    text-align: center;
-    padding-top: 1em;
-  }
-
-  .all-students{
-    display: grid;
-    grid-template-columns: 15em 15em 15em;
-  }
 }
 @media screen and (min-width: 80em) {
   .test{
@@ -451,32 +439,4 @@ label.program-choice input:checked + span {
   .footer-bottom {
     margin-right: 2em;
   }
-
-  /* breakpoint for students page */
-  .all-students{
-    display: grid;
-    grid-template-columns: 17em 17em 17em 17em;
-  }
-  
-  /* breakpoint for student personal page */
-  .graduation{
-    font-size: 2.5rem;
-  }
-  
-  .student-profile{
-    display: grid;
-    grid-template-columns: 24em  29em;
-    grid-template-areas:  "intro indepth";
-    padding-top: 3em;
-  }
-
-  .student-intro{
-    grid-area: intro;
-  }
-  
-  .student-indepth-detail{
-    grid-area: indepth;
-    padding-left: 5em;
-  }
-
 }

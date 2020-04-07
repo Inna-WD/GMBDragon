@@ -18,26 +18,32 @@ const servicePhotos = () => {
   <div><a href="/serviceReviews" data-route="/serviceReviews"><h1 class="program-button">CUSTOMER REVIEWS</h1></a></div>
   <div><a href="/serviceContent" data-route="/serviceContent"><h1 class="program-button">LISTING CONTENT CREATION</h1></a></div>
   <div><a href="/servicePhotographer" data-route="/servicePhotographer"><h1 class="program-button">GOOGLE PHOTOGRAPHER</h1></a></div>
-  <div><a href="/serviceSeo" data-route="/serviceSeo"><h1 class="program-button">KEYWORD RESEARCH and SEO</h1></a></div>
+  <div><a href="/serviceSEO" data-route="/serviceSEO"><h1 class="program-button">KEYWORD RESEARCH and SEO</h1></a></div>
 </nav>
 
     <section class="program-home">
       <article>
             <h2 class="main-text">What are Photo Optimization services ?</h2>
-              <p>
-                    some content
-              </p>
+            Image optimization is the process of editing your web page images in order to increase the overall speed and visibility of your website. Image optimization falls under on-page SEO and deals with optimizing image size, alt tags, and file types to be more SEO-friendly.
+            <br>
+            <br>
+            Having images on website makes your web pages more appealing to the human eye and are an important part to any websites design.
+Images can help to tell your brands story and better explain a message that you’re trying to convey to your audience.
+            
+            <br>
+            <br>
+            Optimized images do more than just look appealing and can not only increase your websites load time, but also rank on search engines and increase your websites visibility.
+<br>
+<br>
+Optimizing your images has 2 main benefits:
+<br>
+*** Faster page load time: With properly optimized images, users won’t be turned away by slow loading pages and be more inclined to stay on your website.
+<br>
+<br>
+*** Increased website visibility: Not only can editing  tags allow your product or decorative images to appear on image search results, but can also help to improve the overall ranking of your various web pages. Search engines consider page load speed as an essential parameter for user engagement, making it a key page ranking factor. The faster the page loads, the higher it could rank on search engines.
 
-            <h2 class="main-text">Title 1</h2>
-                <p>
-                    Content 1 Content 1Content 1Content 1
-                </p>
 
-            <h2 class="main-text">Title 2</h2>
-                <p>
-                    Content 2  Content 2  Content 2  Content 2  Content 2  
-              </p>
-        </article>
+</article>
     </section>
 
 

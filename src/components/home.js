@@ -18,16 +18,8 @@ const HomePage = () => {
       <section class="programs">
         <h2 class="main-text">What we do</h2>
             <p class="sub-text">
-            GMBDragon is a Digital Marketing Agency focused on delivering Google My Business search results optimization (i.e., getting into the 3 results for local businesses which always shows at the top of the organic local search result page).  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
-            voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
-            fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
-            necessitatibus totam!  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
-            voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
-            fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
-            necessitatibus totam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
-            voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
-            fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
-            necessitatibus totam!  Lorem ipsum, dolor
+            GMBDragon is a Digital Marketing Agency focused on delivering Google My Business search results optimization (i.e., getting into the 3 results for local businesses which always shows at the top of the organic local search result page).  
+            
             </p>
         <div class="program-grid">
 
@@ -37,8 +29,7 @@ const HomePage = () => {
             <div class="program-content">
               <h3 class="program-name">Location Verification</h3>
                 <p class="program-brief">
-                If you have multiple locations, open the location you'd like to manage. ... Drag the pin to your business location, using the + and - buttons...
-                </p>
+                Verification helps ensure the accuracy of your business information across Google                </p>
               <a href="/serviceLocations" class="btn learn-more">Learn More</a>
             </div>
           </div>
@@ -61,7 +52,7 @@ const HomePage = () => {
             <div class="program-content">
               <h3 class="program-name">Photo Optimization</h3>
               <p class="program-brief">
-              It's about image SEO. That is, getting your product images and decorative images to rank     ...           </p>
+              It's about image ranking. That is, getting your product images and decorative images to rank your  ...           </p>
               <a href="/servicePhotos" class="btn learn-more">Learn More</a>
             </div>
           </div>
@@ -71,7 +62,7 @@ const HomePage = () => {
             <div class="program-content">
               <h3 class="program-name">Citations and Backlink packages </h3>
               <p class="program-brief">
-              Backlinks for Local SEO. Similar to citations, backlinks are off-site signals that Google use to assess ...  </p>
+              Citations and Backlinks are off-site signals that Google use to assess the integriry and credability of website </p>
               <a href="/serviceCitations" class="btn learn-more">Learn More</a>
             </div>
           </div>
@@ -81,7 +72,7 @@ const HomePage = () => {
           <div class="program-content">
             <h3 class="program-name">Customer reviews generation</h3>
             <p class="program-brief">
-            Backlinks for Local SEO. Similar to citations, backlinks are off-site signals that Google use ...              </p>
+            Review generation is the process of getting more customer reviews on your business online review pages, on sites like Google, Facebook and TripA...   </p>
             <a href="/serviceReviews" class="btn learn-more">Learn More</a>
           </div>
         </div>
@@ -91,7 +82,7 @@ const HomePage = () => {
         <div class="program-content">
           <h3 class="program-name">Listing content creation</h3>
           <p class="program-brief">
-          Backlinks for Local SEO. Similar to citations, backlinks are off-site signals that Google use ...              </p>
+          Content creation is the contribution of information to any media and most especially to digital media for specific contexts             </p>
           <a href="/serviceContent" class="btn learn-more">Learn More</a>
                   </div>
       </div>
@@ -102,7 +93,7 @@ const HomePage = () => {
       <div class="program-content">
         <h3 class="program-name">Trusted Google photographer</h3>
         <p class="program-brief">
-        Backlinks for Local SEO. Similar to citations, backlinks are off-site signals that Google use ...              </p>
+       Hire photographer who is certified by Google to create virtual tours of private property.  </p>
         <a href="/servicePhotographer" class="btn learn-more">Learn More</a>
       </div>
     </div>
@@ -112,7 +103,7 @@ const HomePage = () => {
       <div class="program-content">
         <h3 class="program-name">Keyword Research and SEO</h3>
         <p class="program-brief">
-        Backlinks for Local SEO. Similar to citations, backlinks are off-site signals that Google use ...              </p>
+        Keyword research provides you with specific search data that helps you answer questions like: What are people searching for?      </p>
         <a href="/serviceSEO" class="btn learn-more">Learn More</a>      
         </div>
     </div>
@@ -120,39 +111,45 @@ const HomePage = () => {
 </section>
 
 <section class="about-banner">
-<span class="about-home-title">ABOUT US</span>
+
 </br>
 <span class="about-text">
-<div></div>
+<div><span class="about-home-title">ABOUT US</span></div>
 <div>
-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
-  voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
-  fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
-  necessitatibus totam!
+We are a team of two professionals who are super passionate about digital possibilities for small businesses. We believe that digital presence makes a huge 
+diffrence and could be learnt or... improved just a bit. We are here to help you out!
   <br>
   <br>
 
-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
-  voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
-  fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
-  necessitatibus totam!  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
-  voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
-  fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
-  necessitatibus totam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
-  voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
-  fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
-  necessitatibus totam!  Lorem ipsum, dolor
-  <br>
-  <br>
+  <div class="about-sub-text">
+        <div>
+        <img src="/img/Guy.jpg" alt="Guy" style="width:100px "  >
+        </div>
+  <div class="about-margin">
+
+Guy has a rich experience creating a full data "stack": Creating the data and data flows (APIs, ETL's), querying it, making complex analysis, predictive analysis and visualizations in dashboards for users and customers. 
+Strong product and start-up environment experience, proficient writing very complex SQL queries and stored procedures, as well as data mining and predictive modeling scripts (R and Python)
+
   
-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
-  voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
-  fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
-  necessitatibus totam!  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa alias
-  voluptas, dolore aliquam laboriosam amet quaerat eum distinctio est at
-  fugit voluptatibus nesciunt ducimus adipisci iure, dolores illum
-  necessitatibus totam!
   </div>
+  </div>
+  <br>
+  <br>
+
+  <div class="about-sub-text">
+  <div>
+
+  <img src="/img/inna.jpg" alt="Inna" style="width:100px">
+  </div>
+  <div class="about-margin">
+
+Inna managed multinational, multi m$ complex e-learning projects in Government and high tech domains. Worked with Ministry of Education, Campus, Universities and with international telecommunication companies.
+Managed large scale complex software projects in high tech domain for more than seven years. She beleives that a good project manager is one that has the trio of “time-budget-resources” working perfectly, driving customer satisfaction in internal teamwork.
+
+  
+  </div>
+<br>
+ <br>
   </div>
   </div>
 </span>
@@ -165,8 +162,12 @@ const HomePage = () => {
     <div class="price-content">
       <h3 class="program-name">Basic Optimization package </h3>
         <p class="program-brief">
-        Self-service: <br> A free 3-5-minute assessment of the client situation will be provided by GMBDragon.
-        This is online tutorial for the business owners to perform self-check of the current business status and make simple do-it-yourself steps to improve their visibility.
+        Self-service: 
+        <br> 
+        
+        A free assessment of the client situation will be provided by GMBDragon.
+        <br> 
+        <br>This is online tutorial for the business owners to perform self-check of the current business status and make simple do-it-yourself steps to improve their visibility.
                 </p>
     </div>
   </div>
@@ -187,7 +188,7 @@ const HomePage = () => {
     <div class="price-content">
       <h3 class="program-name">Advanced Optimization Package</h3>
       <p class="program-brief">
-Basic optimization sevice +Content creation (Google Trusted Photographer images for GMB listing, website articles, video content), Review campaign with present and past customers,  White-hat backlinks     </div>
+Basic optimization sevice + Content creation (Google Trusted Photographer images for GMB listing, website articles, video content), <br> Review campaign with present and past customers; <br> White-hat backlinks     </div>
   </div>
 
   <div class="program-item">
@@ -195,8 +196,8 @@ Basic optimization sevice +Content creation (Google Trusted Photographer images 
     <div class="price-content">
       <h3 class="program-name">Maintenance Package</h3>
       <p class="program-brief">
-      For customers which finish the 3 month subscription, a low cost monthly maintenance to help keep the listing high:
-      Content (2-3 image, 1article) creation, Citations (25 per month), Backlinks (1-5 per month), Review campaign
+      For customers which finish the 3 month subscription. This is a low cost monthly maintenance to help keep the listing high:
+      Content (2-3 image, 1 article) creation, Citations (25 per month), Backlinks (1-5 per month), Review campaign
           </div>
   </div>
 

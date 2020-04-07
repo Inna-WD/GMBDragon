@@ -18,26 +18,34 @@ const serviceContent = () => {
   <div><a href="/serviceReviews" data-route="/serviceReviews"><h1 class="program-button">CUSTOMER REVIEWS</h1></a></div>
   <div><a href="/serviceContent" data-route="/serviceContent"><h1 class="program-button">LISTING CONTENT CREATION</h1></a></div>
   <div><a href="/servicePhotographer" data-route="/servicePhotographer"><h1 class="program-button">GOOGLE PHOTOGRAPHER</h1></a></div>
-  <div><a href="/serviceSeo" data-route="/serviceSeo"><h1 class="program-button">KEYWORD RESEARCH and SEO</h1></a></div>
+  <div><a href="/serviceSEO" data-route="/serviceSEO"><h1 class="program-button">KEYWORD RESEARCH and SEO</h1></a></div>
 </nav>
+
+<style>
+ul.b { 
+  list-style-type: square;
+  list-style-position: inside;
+ 
+}
+</style>
 
     <section class="program-home">
       <article>
-            <h2 class="main-text">What is Listings' content creation ?</h2>
+            <h2 class="main-text">What is Content Creation services ?</h2>
               <p>
-                    some content
-              </p>
-
-            <h2 class="main-text">Title 1</h2>
-                <p>
-                    Content 1 Content 1Content 1Content 1
-                </p>
-
-            <h2 class="main-text">Title 2</h2>
-                <p>
-                    Content 2  Content 2  Content 2  Content 2  Content 2  
-              </p>
-        </article>
+              Content creation is the ultimate inbound marketing practice. When you create content, you’re providing free and useful information to your audience, attracting potential customers to your website, and retaining existing customers through quality engagement. Content marketing stats demonstrate:             </p>
+              </article>
+<ul class="b">
+  <li> Content marketing brings in 3X as many leads as traditional marketing and costs 62% less </li>
+  <li> Small businesses that use content marketing get 126% more leads than those that don’t </li>
+  <li> 61% of online purchases are the direct result of a customer reading a blog.</li>
+  <li>Companies that publish 16+ blog posts per month get 3.5X more traffic than those that post four or fewer posts per month. </li>
+  
+</ul>
+<br>
+<br>
+Excellent content and content strategy equal business growth. <br>
+<br>
     </section>
 
 

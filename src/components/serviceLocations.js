@@ -18,14 +18,14 @@ const serviceLocations = () => {
   <div><a href="/serviceReviews" data-route="/serviceReviews"><h1 class="program-button">CUSTOMER REVIEWS</h1></a></div>
   <div><a href="/serviceContent" data-route="/serviceContent"><h1 class="program-button">LISTING CONTENT CREATION</h1></a></div>
   <div><a href="/servicePhotographer" data-route="/servicePhotographer"><h1 class="program-button">GOOGLE PHOTOGRAPHER</h1></a></div>
-  <div><a href="/serviceSeo" data-route="/serviceSeo"><h1 class="program-button">KEYWORD RESEARCH and SEO</h1></a></div>
+  <div><a href="/serviceSEO" data-route="/serviceSEO"><h1 class="program-button">KEYWORD RESEARCH and SEO</h1></a></div>
 </nav>
 
 
     <section class="program-home">
       <article>
             <h2 class="main-text">What are location verification services ?</h2>
-              <p>
+              
               Verification helps ensure the accuracy of your business information across Google. Verified businesses are twice as likely to be considered reputable by users.
               <br>
               <br>
@@ -33,8 +33,8 @@ const serviceLocations = () => {
               <br>
               <br>              
               For most businesses, verification means requesting, receiving, and reading a verification postcard from Google.
-              </p>
-              <br>
+          
+              
               <br> 
               If you’ve continued to verification directly after signing up, you’ll see Mail in the top left corner of the page, over the map where your business is pinned.
               <br>
@@ -47,20 +47,15 @@ const serviceLocations = () => {
               <br> 
               Sign in at google.com/business. Your Google My Business dashboard will appear.
               Find the red banner at the top of the page, and click the Verify now button to the right.
+              
+              <br>
+              <br> 
               You’ll see Mail in the top left corner of the page, over the map where your business is pinned. Confirm that your business information is correct, then click Mail. Make sure not to click Verify later below.
               Enter the name of the person the verification postcard should be mailed to. (This is optional—you can leave it blank if you’d like.) We’ll send it to the address you provided for your business.
               <br>
               <br> 
               Click Send postcard.
-            <h2 class="main-text">Title 1</h2>
-                <p>
-                    Content 1 Content 1Content 1Content 1
-                </p>
-
-            <h2 class="main-text">Title 2</h2>
-                <p>
-                    Content 2  Content 2  Content 2  Content 2  Content 2  
-              </p>
+           
         </article>
     </section>
 
