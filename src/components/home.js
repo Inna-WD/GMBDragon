@@ -9,7 +9,7 @@ const HomePage = () => {
         <div class="hero-banner">
         
           <h1 class="hero-text">
-          <img src="/img/logo_150.png">
+      
            <img src="/img/logo_150.png">
             GMBDragon</h1>
         </div>
